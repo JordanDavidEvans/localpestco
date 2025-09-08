@@ -4,7 +4,7 @@ description = "Contact Local Pest Co for Kingscliff and Tweed Coast pest control
 keywords = ["contact pest control Kingscliff", "Tweed Coast pest service phone", "email Local Pest Co"]
 +++
 
-![Map pinpointing Kingscliff and the Tweed Coast service area](https://via.placeholder.com/600x300 "Map of Kingscliff service area")
+![Map pinpointing Kingscliff and the Tweed Coast service area](https://placehold.co/600x300?text=Service+Area "Map of Kingscliff service area")
 
 Phone: 0405 508 035
 
