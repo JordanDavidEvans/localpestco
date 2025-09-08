@@ -28,6 +28,9 @@ section = ['HTML', 'RSS']
   titleSuffix = ''
   # Google Analytics ID (GA4)
   ga_id = 'G-E3J58VK95M'
+  # logo used in header, favicon, and structured data
+  logo = '/images/logo-placeholder.svg'
   # social accounts
   [params.social]
+    facebook = 'https://www.facebook.com/Localpestco/'
     twitter = ''
