@@ -1,4 +1,9 @@
 {{- $location := cond (eq .Section "locations") .Title "Kingscliff" -}}
+{{- $banner := .Params.banner -}}
 <div class="banner fade-in-element">
-  <img src="https://placehold.co/1600x400?text=Local+Pest+Co" alt="Local Pest Co banner - Local Pest Co. {{ $location }} NSW">
+  {{- if $banner -}}
+    <img src="/image-requests/{{ $banner }}" alt="Local Pest Co banner - Local Pest Co. {{ $location }} NSW" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/1600x400?text=Local+Pest+Co';" />
+  {{- else -}}
+    <img src="https://placehold.co/1600x400?text=Local+Pest+Co" alt="Local Pest Co banner - Local Pest Co. {{ $location }} NSW" />
+  {{- end -}}
 </div>
