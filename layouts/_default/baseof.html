@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
   {{ with .Params.description }}
   <meta name="description" content="{{ . }}">
@@ -9,6 +10,7 @@
   {{ with .Params.keywords }}
   <meta name="keywords" content="{{ delimit . ", " }}">
   {{ end }}
+  <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
 </head>
 <body>
   <header>
@@ -16,6 +18,7 @@
     <nav>
       <a href="{{ "/" | relURL }}">Home</a>
       <a href="{{ "/services/" | relURL }}">Services</a>
+      <a href="{{ "/locations/" | relURL }}">Locations</a>
       <a href="{{ "/about/" | relURL }}">About</a>
       <a href="{{ "/contact/" | relURL }}">Contact</a>
     </nav>
