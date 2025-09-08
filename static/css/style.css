@@ -10,7 +10,15 @@ img {
   display: block;
 }
 
-header, footer {
+header {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+footer {
   background-color: #f0f0f0;
   padding: 1rem;
 }
