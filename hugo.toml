@@ -1,4 +1,4 @@
-baseURL = 'https://localpestco.pages.dev/'
+baseURL = 'https://localpest.co/'
 languageCode = 'en-us'
 title = 'Local Pest Co'
 # theme removed to use custom layouts
