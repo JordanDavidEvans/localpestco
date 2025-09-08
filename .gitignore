@@ -1,0 +1,11 @@
+# Ignore Hugo build output
+public/
+resources/
+
+# OS files
+.DS_Store
+
+# log files
+*.log
+# Hugo build lock file
+.hugo_build.lock

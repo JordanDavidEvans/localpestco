@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+</head>
+<body>
+  <header>
+    <h1><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h1>
+    <nav>
+      <a href="{{ "/" | relURL }}">Home</a>
+      <a href="{{ "/services/" | relURL }}">Services</a>
+      <a href="{{ "/about/" | relURL }}">About</a>
+      <a href="{{ "/contact/" | relURL }}">Contact</a>
+    </nav>
+  </header>
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer>
+    <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}</p>
+  </footer>
+</body>
+</html>

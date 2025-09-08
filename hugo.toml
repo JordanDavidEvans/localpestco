@@ -1,0 +1,4 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Local Pest Co'
+disableKinds = ['taxonomy', 'term']
