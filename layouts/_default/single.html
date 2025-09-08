@@ -1,5 +1,16 @@
 {{ define "main" }}
+{{ partial "breadcrumbs.html" . }}
 <article>
   {{ .Content }}
 </article>
+{{ with site.RegularPages.Related . }}
+<section>
+  <h2>Related Content</h2>
+  <ul>
+    {{ range first 5 . }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
 {{ end }}

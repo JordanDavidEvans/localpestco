@@ -1,0 +1,21 @@
+name: seo
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+      - run: hugo --gc --minify
+      - run: |
+          npm install -g htmltest html-validate@8 lighthouse-ci@0
+          htmltest || true
+          html-validate "public/**/*.html" || true
+          lhci autorun || true

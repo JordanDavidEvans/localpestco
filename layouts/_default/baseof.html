@@ -3,13 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
-  {{ with .Params.description }}
-  <meta name="description" content="{{ . }}">
-  {{ end }}
-  {{ with .Params.keywords }}
-  <meta name="keywords" content="{{ delimit . ", " }}">
-  {{ end }}
+  {{ partial "seo/meta.html" . }}
+  {{ partial "seo/schema.html" . }}
   <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
 </head>
 <body>
@@ -29,5 +24,6 @@
   <footer>
     <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}</p>
   </footer>
+  {{ partial "analytics.html" . }}
 </body>
 </html>
