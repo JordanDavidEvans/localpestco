@@ -1,4 +1,5 @@
 baseURL = '/'
 languageCode = 'en-us'
 title = 'Local Pest Co'
+min_version = '0.146.0'
 disableKinds = ['taxonomy', 'term']
