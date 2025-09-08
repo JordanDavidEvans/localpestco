@@ -18,10 +18,16 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const menuToggle = document.querySelector('.menu-toggle');
-  const mainNav = document.querySelector('.main-nav');
-  if (menuToggle && mainNav) {
+  const mobileNav = document.querySelector('.mobile-nav');
+  const closeMenu = document.querySelector('.close-menu');
+  if (menuToggle && mobileNav) {
     menuToggle.addEventListener('click', () => {
-      mainNav.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+  }
+  if (closeMenu && mobileNav) {
+    closeMenu.addEventListener('click', () => {
+      mobileNav.classList.remove('open');
     });
   }
 
