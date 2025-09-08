@@ -254,14 +254,18 @@ main {
   justify-content: center;
   overflow: hidden;
   z-index: 2000;
-  transition: opacity 1s ease;
+  transition: opacity 2s ease;
+}
+
+.seen-splash #splash-screen {
+  display: none;
 }
 
 #splash-screen .message {
   position: absolute;
   font-size: 2rem;
   font-weight: bold;
-  transition: opacity 1s ease;
+  transition: opacity 2s ease;
 }
 
 #splash-screen .english {
