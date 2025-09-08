@@ -77,13 +77,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const header = document.querySelector('header');
   if (header) {
-    const activateAt = 60;
-    const deactivateAt = 40;
+    const activateAt = 300;
     const handleScroll = () => {
       const { scrollY } = window;
       if (scrollY > activateAt) {
         header.classList.add('scrolled');
-      } else if (scrollY < deactivateAt) {
+      } else if (scrollY <= 0) {
         header.classList.remove('scrolled');
       }
     };
