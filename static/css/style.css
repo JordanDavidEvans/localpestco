@@ -21,22 +21,24 @@ img {
 
 header {
   background-color: var(--color-dark-bg);
-  padding: 1rem;
+  padding: 2rem;
   position: sticky;
   top: 0;
   z-index: 1000;
   display: flex;
   align-items: center;
   gap: 1rem;
+  transition: padding 0.3s ease;
 }
 
 header .main-nav ul {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 0;
   padding: 0;
   list-style: none;
-  gap: 1rem;
+  gap: 2rem;
+  transition: gap 0.3s ease;
 }
 
 header .main-nav li {
@@ -52,9 +54,23 @@ header .main-nav li {
 }
 
 .logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+header.scrolled {
+  padding: 0.5rem;
+}
+
+header.scrolled .main-nav ul {
+  gap: 1rem;
+}
+
+header.scrolled .logo img {
   width: 50px;
   height: 50px;
-  border-radius: 50%;
 }
 
 .menu-toggle,
@@ -91,10 +107,15 @@ nav a:hover {
 .main-nav .dropdown-menu {
   display: none;
   position: absolute;
+  top: 100%;
+  left: 0;
   background: var(--color-light-bg);
   padding: 0.5rem;
   list-style: none;
   margin: 0;
+  white-space: nowrap;
+  min-width: max-content;
+  z-index: 1000;
 }
 
 .main-nav li:hover > .dropdown-menu {
