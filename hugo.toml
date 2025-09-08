@@ -26,7 +26,7 @@ home = ['HTML', 'RSS', 'Robots']
   # optional title suffix appended to page titles
   titleSuffix = ''
   # Google Analytics ID (GA4)
-  ga_id = ''
+  ga_id = 'G-E3J58VK95M'
   # social accounts
   [params.social]
     twitter = ''
