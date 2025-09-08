@@ -30,6 +30,18 @@ I serve Kingscliff, the Tweed Coast, and nearby regions. Call or email me to arr
 
 ### Connect on Social Media
 
+#### Local Pest Co
+
+<div class="social-links">
+  <a href="https://www.facebook.com/Localpestco/" aria-label="Local Pest Co on Facebook">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.07C22 6.46 17.52 2 12 2S2 6.46 2 12.07C2 17.1 5.66 21.23 10.44 22v-7.03H7.9v-2.9h2.54V9.84c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.25c-1.23 0-1.62.77-1.62 1.56v1.87h2.77l-.44 2.9h-2.33V22C18.34 21.23 22 17.1 22 12.07z"/></svg>
+  </a>
+</div>
+
+#### X-stream Fly Sportfishing Tours
+
+Shannon's fly fishing business maintains separate social channels:
+
 <div class="social-links">
   <a href="https://www.facebook.com/xstreamfly/" aria-label="X-stream Fly Sportfishing Tours on Facebook">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.07C22 6.46 17.52 2 12 2S2 6.46 2 12.07C2 17.1 5.66 21.23 10.44 22v-7.03H7.9v-2.9h2.54V9.84c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.25c-1.23 0-1.62.77-1.62 1.56v1.87h2.77l-.44 2.9h-2.33V22C18.34 21.23 22 17.1 22 12.07z"/></svg>
