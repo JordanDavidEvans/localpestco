@@ -1,6 +1,31 @@
-baseURL = '/'
+baseURL = 'https://www.example.com/'
 languageCode = 'en-us'
 title = 'Local Pest Co'
 # theme removed to use custom layouts
 min_version = '0.146.0'
 disableKinds = ['taxonomy', 'term']
+
+[outputs]
+home = ['HTML', 'RSS', 'Robots']
+
+[outputFormats]
+  [outputFormats.Robots]
+    mediaType = 'text/plain'
+    baseName = 'robots'
+    isPlainText = true
+
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+[params]
+  # canonical production URL used for canonicals and sitemap
+  productionBaseURL = 'https://www.example.com/'
+  # optional title suffix appended to page titles
+  titleSuffix = ''
+  # Google Analytics ID (GA4)
+  ga_id = ''
+  # social accounts
+  [params.social]
+    twitter = ''

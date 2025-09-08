@@ -1,0 +1,8 @@
+{{- $env := getenv "HUGO_ENV" | default "production" -}}
+User-agent: *
+{{- if eq $env "production" -}}
+Disallow:
+{{- else -}}
+Disallow: /
+{{- end -}}
+Sitemap: {{ .Site.Params.productionBaseURL | default .Site.BaseURL }}sitemap.xml

@@ -1,0 +1,18 @@
+{{- $alt := .Text | plainify -}}
+{{- if eq (len $alt) 0 -}}{{ warnf "Image missing alt text: %s" .Destination }}{{- end -}}
+{{- $title := .Title -}}
+{{- $img := .Page.Resources.GetMatch (printf "%s" .Destination) -}}
+{{- if $img -}}
+  {{- $large := $img.Fit "1200x" -}}
+  {{- $medium := $img.Fit "800x" -}}
+  {{- $small := $img.Fit "400x" -}}
+  {{- $avif := $large.Resize "1200x q75 avif" -}}
+  {{- $webp := $large.Resize "1200x q75 webp" -}}
+  <picture>
+    <source srcset="{{ $avif.RelPermalink }}" type="image/avif">
+    <source srcset="{{ $webp.RelPermalink }}" type="image/webp">
+    <img src="{{ $large.RelPermalink }}" srcset="{{ $small.RelPermalink }} 400w, {{ $medium.RelPermalink }} 800w, {{ $large.RelPermalink }} 1200w" sizes="100vw" loading="lazy" alt="{{ $alt }}" {{ with $title }}title="{{ . }}"{{ end }} width="{{ $large.Width }}" height="{{ $large.Height }}">
+  </picture>
+{{- else -}}
+  <img src="{{ .Destination | relURL }}" alt="{{ $alt }}" {{ with $title }}title="{{ . }}"{{ end }} loading="lazy">
+{{- end -}}

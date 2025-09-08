@@ -1,0 +1,44 @@
+{{- $env := getenv "HUGO_ENV" | default "production" -}}
+{{- $base := .Site.Params.productionBaseURL | default .Site.BaseURL -}}
+{{- $schemas := slice -}}
+
+{{- $org := dict "@type" "Organization" "name" .Site.Title "url" $base -}}
+{{- with .Site.Params.logo }}{{ $org = merge $org (dict "logo" (absURL .)) }}{{ end -}}
+{{- $schemas = $schemas | append $org -}}
+
+{{- $website := dict "@type" "WebSite" "name" .Site.Title "url" $base -}}
+{{- with .Site.Params.search.url -}}
+  {{- $website = merge $website (dict "potentialAction" (dict "@type" "SearchAction" "target" (printf "%s?q={search_term_string}" .) "query-input" "required name=search_term_string")) -}}
+{{- end -}}
+{{- $schemas = $schemas | append $website -}}
+
+{{- /* Breadcrumbs */ -}}
+{{- $crumbs := slice -}}
+{{- $pos := 1 -}}
+{{- $section := .CurrentSection -}}
+{{- if $section -}}
+  {{- range (append ($section.Ancestors.Reverse) (slice $section)) -}}
+    {{- $crumbs = $crumbs | append (dict "@type" "ListItem" "position" $pos "name" .Title "item" (replace .Permalink .Site.BaseURL $base)) -}}
+    {{- $pos = add $pos 1 -}}
+  {{- end -}}
+{{- end -}}
+{{- if .IsPage -}}
+  {{- $crumbs = $crumbs | append (dict "@type" "ListItem" "position" $pos "name" .Title "item" (replace .Permalink .Site.BaseURL $base)) -}}
+{{- end -}}
+{{- if gt (len $crumbs) 0 -}}
+  {{- $schemas = $schemas | append (dict "@type" "BreadcrumbList" "itemListElement" $crumbs) -}}
+{{- end -}}
+
+{{- if .IsPage -}}
+  {{- $ptype := "WebPage" -}}
+  {{- if in (slice "posts" "blog") .Section }}{{ $ptype = "Article" }}{{ end -}}
+  {{- $page := dict "@type" $ptype "headline" .Title "url" (replace .Permalink .Site.BaseURL $base) "datePublished" (.PublishDate | time.Format "2006-01-02") "dateModified" (.Lastmod | time.Format "2006-01-02") -}}
+  {{- with .Params.author }}{{ $page = merge $page (dict "author" (dict "@type" "Person" "name" .)) }}{{ end -}}
+  {{- with (or .Params.images (slice)) }}{{ $page = merge $page (dict "image" (apply (first 1 .) "absURL" ".")) }}{{ end -}}
+  {{- with .Params.schema }}{{ $page = merge $page . }}{{ end -}}
+  {{- $schemas = $schemas | append $page -}}
+{{- end -}}
+
+<script type="application/ld+json">
+{{ $schemas | jsonify }}
+</script>
