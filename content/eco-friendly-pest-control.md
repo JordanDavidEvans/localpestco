@@ -14,6 +14,8 @@ Choosing eco-friendly pest control protects local wildlife and keeps families sa
 - Use baits and traps before considering sprays.
 - Opt for low-toxicity treatments targeted to the pest.
 
-## Work With Local Experts
+## Work With a Local Expert
 
-Local Pest Co combines safe products with cultural respect for the land, offering effective and environmentally conscious pest management across the Tweed Coast.
+I combine safe products with cultural respect for the land, offering effective and environmentally conscious pest management across the Tweed Coast.
+
+Call me on 0405 508 035 or email thelocalpestco@bigpond.com to discuss eco-friendly options.
