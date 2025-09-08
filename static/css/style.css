@@ -13,6 +13,10 @@ body {
   color: var(--color-black);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Knewave', cursive;
+}
+
 a {
   color: var(--color-accent-red);
   text-decoration: underline;
@@ -38,6 +42,7 @@ header {
   align-items: center;
   gap: 1rem;
   transition: padding 0.3s ease;
+  font-family: 'Knewave', cursive;
 }
 
 header .main-nav ul {
@@ -53,6 +58,22 @@ header .main-nav ul {
 header .main-nav li {
   position: relative;
   margin: 0;
+}
+
+header .main-nav a,
+.mobile-nav a {
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+header .main-nav a:hover,
+header .main-nav a:focus,
+header .main-nav a:active,
+.mobile-nav a:hover,
+.mobile-nav a:focus,
+.mobile-nav a:active {
+  color: var(--color-accent-red);
+  text-decoration: underline;
 }
 
 .header-actions {
@@ -101,6 +122,7 @@ header.scrolled .logo img {
 
 .mobile-nav {
   display: none;
+  font-family: 'Knewave', cursive;
 }
 
 .mobile-nav ul {
