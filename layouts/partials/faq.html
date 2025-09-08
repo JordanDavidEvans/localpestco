@@ -1,0 +1,11 @@
+{{- if .Params.faq }}
+<section class="faq">
+  <h2>FAQs</h2>
+  {{ range .Params.faq }}
+  <details>
+    <summary>{{ .question }}</summary>
+    <p>{{ .answer }}</p>
+  </details>
+  {{ end }}
+</section>
+{{- end }}

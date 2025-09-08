@@ -2,6 +2,14 @@
 title = "Kingscliff"
 description = "Local pest control services in Kingscliff."
 keywords = ["pest control Kingscliff", "termite control Kingscliff", "rodent pest control Kingscliff", "cockroach control Kingscliff", "ant pest control Kingscliff", "spider pest control Kingscliff"]
+
+[[faq]]
+question = "Do you offer pest control in Kingscliff?"
+answer = "Yes, I'm based in Kingscliff and service all local properties."
+
+[[faq]]
+question = "What pests are common in Kingscliff?"
+answer = "Termites, cockroaches and rodents are typical in Kingscliff's coastal climate."
 +++
 
 <div class="hero">Kingscliff hero placeholder</div>

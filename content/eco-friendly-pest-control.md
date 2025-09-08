@@ -2,6 +2,14 @@
 title = "Guide to Eco-Friendly Pest Control"
 description = "Practical, environmentally safe pest control tips for Tweed Coast homes."
 keywords = ["guide to eco friendly pest control", "eco-friendly pest control methods", "eco safe pest control", "eco friendly pest solutions"]
+
+[[faq]]
+question = "Are eco-friendly pest control methods effective?"
+answer = "Yes, modern green treatments target pests while minimising impact on people and wildlife."
+
+[[faq]]
+question = "Will eco treatments harm my pets?"
+answer = "The products I use are chosen to be safe for families and pets when applied correctly."
 +++
 
 ## Why Eco-Friendly Pest Control Matters

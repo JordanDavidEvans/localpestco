@@ -2,6 +2,14 @@
 title = "Pottsville"
 description = "Pest control services for Pottsville and Pottsville Beach."
 keywords = ["pest control Pottsville", "termite control Pottsville", "rodent pest control Pottsville", "ant pest control Pottsville Beach", "cockroach pest control Pottsville", "spider pest control Pottsville Beach"]
+
+[[faq]]
+question = "Do you offer pest control in Pottsville?"
+answer = "Yes, I service Pottsville and Pottsville Beach for all pest issues."
+
+[[faq]]
+question = "What pests are common in Pottsville?"
+answer = "Termites and cockroaches are frequent in Pottsville's warm, coastal environment."
 +++
 
 <div class="hero">Pottsville hero placeholder</div>

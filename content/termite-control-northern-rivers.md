@@ -2,6 +2,14 @@
 title = "Northern Rivers Termite Control Specialists"
 description = "Targeted termite inspections and treatments for homes across the Northern Rivers region."
 keywords = ["Northern Rivers termite control", "termite inspections NSW", "licensed termite treatment"]
+
+[[faq]]
+question = "How often should I get a termite inspection?"
+answer = "An annual inspection is recommended, especially in high-risk areas like the Northern Rivers."
+
+[[faq]]
+question = "What are common signs of termites?"
+answer = "Look for mud tubes, hollow-sounding timber and discarded wings around windows."
 +++
 
 ## Local Termite Expertise

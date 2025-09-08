@@ -1,6 +1,14 @@
 +++
 title = "Cabarita Beach"
 description = "Pest control services for Cabarita Beach."
+
+[[faq]]
+question = "Do you offer pest control in Cabarita Beach?"
+answer = "Yes, I'm available for all pest issues throughout Cabarita Beach."
+
+[[faq]]
+question = "What pests are common in Cabarita Beach?"
+answer = "Termites, ants and rodents are regularly treated in Cabarita Beach homes."
 +++
 
 <div class="hero">Cabarita Beach hero placeholder</div>
