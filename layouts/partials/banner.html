@@ -2,4 +2,6 @@
 {{- $banner := .Params.banner | default "banner.jpg" -}}
 <div class="banner fade-in-element">
   <img src="/image-requests/{{ $banner }}" alt="Local Pest Co banner - Local Pest Co. {{ $location }} NSW" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/1600x400?text=Local+Pest+Co';" />
+  <div class="banner-overlay" aria-hidden="true"></div>
+  <h1 class="banner-title">{{ .Title }}</h1>
 </div>
