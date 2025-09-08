@@ -12,11 +12,11 @@ question = "What pests are common in Kingscliff?"
 answer = "Termites, cockroaches and rodents are typical in Kingscliff's coastal climate."
 +++
 
-<div class="hero">Kingscliff hero placeholder</div>
+{{< requestedimg file="locations-kingscliff-hero.jpg" alt="Kingscliff coastline with local homes and businesses" >}}
 
 I deliver eco-friendly pest control for homes and businesses in Kingscliff. I handle termites, rodents, ants, spiders, and cockroaches with local expertise.
 
-<div class="placeholder-box"></div>
+{{< requestedimg file="locations-kingscliff-detail.jpg" alt="Close-up of typical pests found in Kingscliff properties" >}}
 
 ## Why Pest Control is Needed in Kingscliff
 

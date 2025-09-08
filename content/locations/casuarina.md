@@ -11,11 +11,11 @@ question = "What pests are common in Casuarina?"
 answer = "Termites, ants and spiders are frequently treated in Casuarina properties."
 +++
 
-<div class="hero">Casuarina hero placeholder</div>
+{{< requestedimg file="locations-casuarina-hero.jpg" alt="Casuarina's coastal suburb streets and homes" >}}
 
 I protect Casuarina homes and businesses with safe, effective pest treatments.
 
-<div class="placeholder-box"></div>
+{{< requestedimg file="locations-casuarina-detail.jpg" alt="Close-up of pests common in Casuarina residences" >}}
 
 ## Why Pest Control is Needed in Casuarina
 

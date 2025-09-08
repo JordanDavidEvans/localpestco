@@ -12,11 +12,11 @@ question = "What pests are common in Pottsville?"
 answer = "Termites and cockroaches are frequent in Pottsville's warm, coastal environment."
 +++
 
-<div class="hero">Pottsville hero placeholder</div>
+{{< requestedimg file="locations-pottsville-hero.jpg" alt="Beachfront scene or town centre view of Pottsville" >}}
 
 From Pottsville to Pottsville Beach, I deliver termite, rodent, ant, spider, and cockroach control with minimal environmental impact.
 
-<div class="placeholder-box"></div>
+{{< requestedimg file="locations-pottsville-detail.jpg" alt="Close-up of pests commonly found in Pottsville homes" >}}
 
 ## Why Pest Control is Needed in Pottsville
 

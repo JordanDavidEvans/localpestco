@@ -11,11 +11,11 @@ question = "What pests are common in Cabarita Beach?"
 answer = "Termites, ants and rodents are regularly treated in Cabarita Beach homes."
 +++
 
-<div class="hero">Cabarita Beach hero placeholder</div>
+{{< requestedimg file="locations-cabarita-beach-hero.jpg" alt="Cabarita Beach shoreline and headland" >}}
 
 I handle termites, rodents, and other pests for Cabarita Beach properties.
 
-<div class="placeholder-box"></div>
+{{< requestedimg file="locations-cabarita-beach-detail.jpg" alt="Close-up of pests or environments around Cabarita Beach" >}}
 
 ## Why Pest Control is Needed in Cabarita Beach
 

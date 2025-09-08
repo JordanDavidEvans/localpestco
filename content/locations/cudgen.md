@@ -12,11 +12,11 @@ question = "What pests are common in Cudgen?"
 answer = "Rodents, cockroaches and termites are commonly treated in Cudgen."
 +++
 
-<div class="hero">Cudgen hero placeholder</div>
+{{< requestedimg file="locations-cudgen-hero.jpg" alt="Scenic view of Cudgen's rural landscape and homes" >}}
 
 I offer Cudgen residents safe treatments for termites, rodents, cockroaches, ants, and spiders.
 
-<div class="placeholder-box"></div>
+{{< requestedimg file="locations-cudgen-detail.jpg" alt="Close-up of pests typically found in Cudgen properties" >}}
 
 ## Why Pest Control is Needed in Cudgen
 

@@ -12,7 +12,7 @@ question = "Can I get a quote over the phone?"
 answer = "Yes, I'm happy to provide estimates over the phone or via email."
 +++
 
-![Map pinpointing Kingscliff and the Tweed Coast service area](https://placehold.co/600x300?text=Service+Area "Map of Kingscliff service area")
+{{< requestedimg file="contact-1.jpg" alt="Map showing Kingscliff and the broader Tweed Coast service area" >}}
 
 Phone: 0405 508 035
 

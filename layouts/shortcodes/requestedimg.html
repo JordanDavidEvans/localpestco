@@ -1,0 +1,3 @@
+{{- $file := .Get "file" -}}
+{{- $alt := .Get "alt" -}}
+<img src="/image-requests/{{ $file }}" alt="{{ $alt }}" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/600x300?text=Image+Coming+Soon';" />
