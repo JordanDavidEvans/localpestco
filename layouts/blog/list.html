@@ -1,0 +1,11 @@
+{{ define "main" }}
+<section class="blog-list">
+  {{ range .Pages.ByDate.Reverse }}
+  <article class="post-preview">
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <p class="post-meta">{{ .Date.Format "2006-01-02" }}</p>
+    {{ with .Params.meta_desc }}<p>{{ . }}</p>{{ else }}<p>{{ .Summary }}</p>{{ end }}
+  </article>
+  {{ end }}
+</section>
+{{ end }}

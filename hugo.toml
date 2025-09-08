@@ -8,6 +8,7 @@ enableGitInfo = true
 
 [outputs]
 home = ['HTML', 'RSS', 'Robots']
+section = ['HTML', 'RSS']
 
 [outputFormats]
   [outputFormats.Robots]
