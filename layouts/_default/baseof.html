@@ -6,6 +6,11 @@
   {{ partial "seo/meta.html" . }}
   {{ partial "seo/schema.html" . }}
   <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
+  <script>
+    if (document.cookie.split(';').some(c => c.trim() === 'splashSeen=true')) {
+      document.documentElement.classList.add('seen-splash');
+    }
+  </script>
 </head>
 <body>
   <div id="splash-screen" aria-hidden="true">

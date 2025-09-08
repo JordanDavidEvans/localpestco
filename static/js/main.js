@@ -56,16 +56,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const splash = document.getElementById('splash-screen');
   if (splash) {
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        splash.classList.add('fade-english');
-      }, 1000);
-      setTimeout(() => {
-        splash.classList.add('hide');
-      }, 2000);
-      setTimeout(() => {
-        splash.remove();
-      }, 3000);
-    });
+    const hasSeenSplash = document.cookie.split(';').some(c => c.trim() === 'splashSeen=true');
+    if (hasSeenSplash) {
+      splash.remove();
+    } else {
+      window.addEventListener('load', () => {
+        document.cookie = 'splashSeen=true; path=/; max-age=31536000';
+        setTimeout(() => {
+          splash.classList.add('fade-english');
+        }, 1000);
+        setTimeout(() => {
+          splash.classList.add('hide');
+        }, 3000);
+        setTimeout(() => {
+          splash.remove();
+        }, 5000);
+      });
+    }
   }
 });
