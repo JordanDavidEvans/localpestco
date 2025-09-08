@@ -16,4 +16,13 @@ answer = "All treatments include practical follow-up advice and a service guaran
 
 Founded and operated by me, an Aboriginal local, Local Pest Co combines my community knowledge with licensed pest management techniques for Kingscliff and surrounding suburbs. I focus on safe methods that respect families, pets, and the environment while keeping Tweed Coast homes pest-free.
 
+## Licence Details
+
+- Licence number: 5073077
+- Licence holder: Mr SHANNON KITCHENER
+- Status: Issued
+- Licence type: PMT-TP – Pest Management Technician (Timber Pest Control)
+- Date issued: 20/02/2025
+- Expiry date: 14/01/2030
+
 Call me on 0405 508 035 or email thelocalpestco@bigpond.com to book a visit.

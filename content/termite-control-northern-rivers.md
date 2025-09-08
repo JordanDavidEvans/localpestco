@@ -24,9 +24,9 @@ Termites thrive in the warm, humid conditions of the Northern Rivers. I focus on
 
 ## NSW Licensing & Regulations
 
-All termite work in New South Wales must be carried out by licensed professionals. I hold the required pest management technician licence issued by the NSW Environment Protection Authority ([EPA NSW](https://www.epa.nsw.gov.au/your-environment/pesticides/licences-and-permits/pest-management-technicians-and-businesses)).
+All termite work in New South Wales must be carried out by licensed professionals. I hold NSW EPA pest management technician licence number 5073077 ([EPA NSW](https://www.epa.nsw.gov.au/Your-environment/Pesticides/Licences-and-advice-for-occupational-pesticide-users/pest-management-technicians-fumigators-training-permits)), issued 20/02/2025 and valid until 14/01/2030.
 
-For homeowners, NSW Fair Trading provides guidance on engaging accredited pest controllers and understanding treatment options ([NSW Fair Trading - Pest Management](https://www.fairtrading.nsw.gov.au/housing-and-property/building-and-renovating/pest-management)).
+For homeowners, the EPA provides guidance on engaging accredited pest controllers and understanding treatment options ([EPA - Engaging a Pest Management Technician](https://www.epa.nsw.gov.au/Your-environment/Pesticides/pesticide-use-nsw/engaging-a-pest-management-technician)).
 
 ## Book a Northern Rivers Termite Inspection
 
