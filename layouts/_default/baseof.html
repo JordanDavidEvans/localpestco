@@ -54,8 +54,37 @@
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
       </button>
     </div>
-  </header>
-  {{ partial "banner.html" . }}
+    </header>
+    <nav class="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+      <button class="close-menu" aria-label="Close navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+      <ul>
+        <li><a href="{{ "/" | relURL }}">Home</a></li>
+        <li class="dropdown">
+          <a href="{{ "/services/" | relURL }}">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ "/eco-friendly-pest-control/" | relURL }}">Eco-Friendly Pest Control</a></li>
+            <li><a href="{{ "/termite-control-northern-rivers/" | relURL }}">Termite Control</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="{{ "/locations/" | relURL }}">Locations</a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ "/locations/cabarita-beach/" | relURL }}">Cabarita Beach</a></li>
+            <li><a href="{{ "/locations/casuarina/" | relURL }}">Casuarina</a></li>
+            <li><a href="{{ "/locations/chinderah/" | relURL }}">Chinderah</a></li>
+            <li><a href="{{ "/locations/cudgen/" | relURL }}">Cudgen</a></li>
+            <li><a href="{{ "/locations/fingal-head/" | relURL }}">Fingal Head</a></li>
+            <li><a href="{{ "/locations/kingscliff/" | relURL }}">Kingscliff</a></li>
+            <li><a href="{{ "/locations/pottsville/" | relURL }}">Pottsville</a></li>
+          </ul>
+        </li>
+        <li><a href="{{ "/about/" | relURL }}">About</a></li>
+        <li><a href="{{ "/contact/" | relURL }}">Contact</a></li>
+      </ul>
+    </nav>
+    {{ partial "banner.html" . }}
   {{ partial "cta.html" . }}
   <main id="main-content">
     {{ block "main" . }}{{ end }}

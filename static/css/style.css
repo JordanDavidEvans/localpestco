@@ -90,6 +90,35 @@ header.scrolled .logo img {
   height: 24px;
 }
 
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mobile-nav .close-menu {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-nav .close-menu svg {
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-nav .dropdown-menu {
+  padding-left: 1rem;
+}
+
 footer {
   background-color: var(--color-dark-bg);
   padding: 1rem;
@@ -247,20 +276,17 @@ main {
     flex-wrap: wrap;
   }
 
-  header .main-nav ul {
-    width: 100%;
-    margin: 0;
+  .main-nav {
     display: none;
-    flex-direction: column;
-    gap: 0;
   }
 
-  header .main-nav.open ul {
+  .mobile-nav.open {
     display: flex;
-  }
-
-  header .main-nav li {
-    margin-right: 0;
+    position: fixed;
+    inset: 0;
+    background: var(--color-light-bg);
+    z-index: 2000;
+    flex-direction: column;
   }
 
   .menu-toggle {
