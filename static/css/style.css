@@ -16,16 +16,43 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+header .main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+}
+
+.header-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.menu-toggle,
+.phone-link {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle svg,
+.phone-link svg {
+  width: 24px;
+  height: 24px;
 }
 
 footer {
   background-color: #f0f0f0;
   padding: 1rem;
-}
-
-header nav {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 nav a {
@@ -53,6 +80,14 @@ nav a {
 }
 
 main {
+  padding: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-form,
+.cta,
+.land-care {
   padding: 1rem;
   max-width: 1000px;
   margin: 0 auto;
@@ -121,6 +156,25 @@ main {
   nav a {
     display: block;
     margin: 0.5rem 0;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+
+  header .main-nav {
+    width: 100%;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+  }
+
+  header .main-nav.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
   }
 
   .content-row {
