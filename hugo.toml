@@ -4,6 +4,7 @@ title = 'Local Pest Co'
 # theme removed to use custom layouts
 min_version = '0.146.0'
 disableKinds = ['taxonomy', 'term']
+enableGitInfo = true
 
 [outputs]
 home = ['HTML', 'RSS', 'Robots']

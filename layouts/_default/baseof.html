@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header>
-    <h1><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h1>
+    <p class="site-title"><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></p>
     <nav>
       <a href="{{ "/" | relURL }}">Home</a>
       <a href="{{ "/services/" | relURL }}">Services</a>
@@ -18,7 +19,7 @@
       <a href="{{ "/contact/" | relURL }}">Contact</a>
     </nav>
   </header>
-  <main>
+  <main id="main-content">
     {{ block "main" . }}{{ end }}
   </main>
   <footer>
