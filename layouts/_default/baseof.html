@@ -19,6 +19,7 @@
       <a href="{{ "/contact/" | relURL }}">Contact</a>
     </nav>
   </header>
+  {{ partial "banner.html" . }}
   <main id="main-content">
     {{ block "main" . }}{{ end }}
   </main>
@@ -27,5 +28,6 @@
     <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}</p>
   </footer>
   {{ partial "analytics.html" . }}
+  <script src="{{ "/js/main.js" | relURL }}"></script>
 </body>
 </html>
