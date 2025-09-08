@@ -14,14 +14,24 @@ answer = "Yes, I strive to offer same-day or next-day visits across the Tweed Co
 
 {{< requestedimg file="services-1.jpg" alt="Technician applying eco-friendly pest spray around a Tweed Coast home" >}}
 
-I handle common pest issues with targeted treatments across Kingscliff, Casuarina, Cabarita Beach, and the wider Tweed Coast:
+I handle common pest issues with targeted treatments across Kingscliff, Casuarina, Cabarita Beach, and the wider Tweed Coast.
 
-- Termite inspections and treatment programs
-- Rodent management
-- Cockroach and ant solutions
-- Spider control
+## Pest Control Services
 
-For solutions tailored to your property, see our [residential pest control](/residential-pest-control/) and [commercial pest control](/commercial-pest-control/) services.
+### [Residential Pest Control](/residential-pest-control/)
+Safe, low-toxicity treatments for Tweed Coast homes.
+
+### [Commercial Pest Control](/commercial-pest-control/)
+Food-safe pest management for businesses.
+
+### [Timber Pest Control](/timber-pest-control/)
+Licensed inspections and treatments for timber pests.
+
+### [Eco-Friendly Pest Control](/eco-friendly-pest-control/)
+Environmentally conscious pest solutions.
+
+### [Termite Control](/termite-control-northern-rivers/)
+Targeted termite inspections and treatment programs.
 
 Every visit includes practical advice for prevention and long-term pest management.
 
