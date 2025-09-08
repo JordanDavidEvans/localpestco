@@ -1,4 +1,4 @@
-baseURL = 'https://www.example.com/'
+baseURL = 'https://localpestco.pages.dev/'
 languageCode = 'en-us'
 title = 'Local Pest Co'
 # theme removed to use custom layouts
@@ -21,7 +21,7 @@ home = ['HTML', 'RSS', 'Robots']
 
 [params]
   # canonical production URL used for canonicals and sitemap
-  productionBaseURL = 'https://www.example.com/'
+  productionBaseURL = 'https://localpest.co/'
   # optional title suffix appended to page titles
   titleSuffix = ''
   # Google Analytics ID (GA4)
