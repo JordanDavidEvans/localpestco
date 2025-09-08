@@ -28,8 +28,7 @@
         <li class="dropdown">
           <a href="{{ "/services/" | relURL }}">Services</a>
           <ul class="dropdown-menu">
-            <li><a href="{{ "/eco-friendly-pest-control/" | relURL }}">Eco-Friendly Pest Control</a></li>
-            <li><a href="{{ "/termite-control-northern-rivers/" | relURL }}">Termite Control</a></li>
+            {{ partial "services-menu.html" . }}
           </ul>
         </li>
         <li class="dropdown">
@@ -66,8 +65,7 @@
         <li class="dropdown">
           <a href="{{ "/services/" | relURL }}">Services</a>
           <ul class="dropdown-menu">
-            <li><a href="{{ "/eco-friendly-pest-control/" | relURL }}">Eco-Friendly Pest Control</a></li>
-            <li><a href="{{ "/termite-control-northern-rivers/" | relURL }}">Termite Control</a></li>
+            {{ partial "services-menu.html" . }}
           </ul>
         </li>
         <li class="dropdown">
