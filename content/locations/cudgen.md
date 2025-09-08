@@ -6,6 +6,8 @@ keywords = ["pest control Cudgen", "termite control Cudgen", "rodent pest contro
 
 <div class="hero">Cudgen hero placeholder</div>
 
-Local Pest Co offers Cudgen residents safe treatments for termites, rodents, cockroaches, ants, and spiders.
+I offer Cudgen residents safe treatments for termites, rodents, cockroaches, ants, and spiders.
 
 <div class="placeholder-box"></div>
+
+Call me on 0405 508 035 or email thelocalpestco@bigpond.com for pest control in Cudgen.

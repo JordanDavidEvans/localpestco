@@ -22,6 +22,7 @@
   <main id="main-content">
     {{ block "main" . }}{{ end }}
   </main>
+  {{ partial "cta.html" . }}
   <footer>
     <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}</p>
   </footer>

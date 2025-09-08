@@ -6,6 +6,8 @@ keywords = ["pest control Chinderah", "termite control Chinderah", "rodent pest 
 
 <div class="hero">Chinderah hero placeholder</div>
 
-We provide eco-friendly termite, rodent, ant, spider, and cockroach treatments for homes and businesses across Chinderah.
+I provide eco-friendly termite, rodent, ant, spider, and cockroach treatments for homes and businesses across Chinderah.
 
 <div class="placeholder-box"></div>
+
+Call me on 0405 508 035 or email thelocalpestco@bigpond.com for pest control in Chinderah.

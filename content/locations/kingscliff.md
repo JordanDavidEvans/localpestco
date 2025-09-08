@@ -6,6 +6,8 @@ keywords = ["pest control Kingscliff", "termite control Kingscliff", "rodent pes
 
 <div class="hero">Kingscliff hero placeholder</div>
 
-Our Kingscliff team delivers eco-friendly pest control for homes and businesses. We handle termites, rodents, ants, spiders, and cockroaches with local expertise.
+I deliver eco-friendly pest control for homes and businesses in Kingscliff. I handle termites, rodents, ants, spiders, and cockroaches with local expertise.
 
 <div class="placeholder-box"></div>
+
+Call me on 0405 508 035 or email thelocalpestco@bigpond.com to book a service in Kingscliff.

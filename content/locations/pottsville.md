@@ -6,6 +6,8 @@ keywords = ["pest control Pottsville", "termite control Pottsville", "rodent pes
 
 <div class="hero">Pottsville hero placeholder</div>
 
-From Pottsville to Pottsville Beach, our team delivers termite, rodent, ant, spider, and cockroach control with minimal environmental impact.
+From Pottsville to Pottsville Beach, I deliver termite, rodent, ant, spider, and cockroach control with minimal environmental impact.
 
 <div class="placeholder-box"></div>
+
+Call me on 0405 508 035 or email thelocalpestco@bigpond.com for pest control in Pottsville.
