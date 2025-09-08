@@ -12,7 +12,7 @@ question = "Do you guarantee your work?"
 answer = "All treatments include practical follow-up advice and a service guarantee."
 +++
 
-![Local Pest Co owner standing beside service vehicle](https://placehold.co/600x300?text=Owner "Owner beside Local Pest Co truck")
+{{< requestedimg file="about-1.jpg" alt="Local Pest Co owner standing beside a branded service vehicle in Kingscliff" >}}
 
 Founded and operated by me, an Aboriginal local, Local Pest Co combines my community knowledge with licensed pest management techniques for Kingscliff and surrounding suburbs. I focus on safe methods that respect families, pets, and the environment while keeping Tweed Coast homes pest-free.
 

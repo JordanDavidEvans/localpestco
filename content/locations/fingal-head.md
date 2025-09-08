@@ -11,11 +11,11 @@ question = "What pests are common in Fingal Head?"
 answer = "Termites and ants are regular problems in Fingal Head's subtropical climate."
 +++
 
-<div class="hero">Fingal Head hero placeholder</div>
+{{< requestedimg file="locations-fingal-head-hero.jpg" alt="Coastal view of Fingal Head and its lighthouse" >}}
 
 I help Fingal Head residents stay pest-free year round.
 
-<div class="placeholder-box"></div>
+{{< requestedimg file="locations-fingal-head-detail.jpg" alt="Close-up of common pests around Fingal Head properties" >}}
 
 ## Why Pest Control is Needed in Fingal Head
 

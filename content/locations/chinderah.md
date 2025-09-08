@@ -12,11 +12,11 @@ question = "What pests are common in Chinderah?"
 answer = "Termites and mosquitoes are frequent concerns around Chinderah."
 +++
 
-<div class="hero">Chinderah hero placeholder</div>
+{{< requestedimg file="locations-chinderah-hero.jpg" alt="Aerial view of Chinderah's riverside community on the Tweed Coast" >}}
 
 I provide eco-friendly termite, rodent, ant, spider, and cockroach treatments for homes and businesses across Chinderah.
 
-<div class="placeholder-box"></div>
+{{< requestedimg file="locations-chinderah-detail.jpg" alt="Close-up of common pests found in Chinderah homes" >}}
 
 ## Why Pest Control is Needed in Chinderah
 

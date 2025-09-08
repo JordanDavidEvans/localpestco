@@ -12,7 +12,7 @@ question = "Do you provide same-day service?"
 answer = "Yes, I strive to offer same-day or next-day visits across the Tweed Coast."
 +++
 
-![Technician applying eco-friendly pest spray around a Tweed Coast home](https://placehold.co/700x350?text=Service "Pest treatment at a Tweed Coast property")
+{{< requestedimg file="services-1.jpg" alt="Technician applying eco-friendly pest spray around a Tweed Coast home" >}}
 
 I handle common pest issues with targeted treatments across Kingscliff, Casuarina, Cabarita Beach, and the wider Tweed Coast:
 
@@ -25,4 +25,4 @@ Every visit includes practical advice for prevention and long-term pest manageme
 
 Call me on 0405 508 035 or email thelocalpestco@bigpond.com to book a service.
 
-![Placeholder of additional service](https://placehold.co/1000x300?text=More+Services)
+{{< requestedimg file="services-2.jpg" alt="Banner highlighting additional pest control services" >}}
