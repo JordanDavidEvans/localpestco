@@ -11,14 +11,12 @@ question = "What pests are common in Fingal Head?"
 answer = "Termites and ants are regular problems in Fingal Head's subtropical climate."
 +++
 
-{{< requestedimg file="locations-fingal-head-hero.jpg" alt="Coastal view of Fingal Head and its lighthouse" >}}
+## Pest Control in Fingal Head
 
-I help Fingal Head residents stay pest-free year round.
+I help Fingal Head residents stay **pest-free** year round.
 
-{{< requestedimg file="locations-fingal-head-detail.jpg" alt="Close-up of common pests around Fingal Head properties" >}}
-
-## Why Pest Control is Needed in Fingal Head
+### Why Pest Control is Needed in Fingal Head
 
 Fingal Head's subtropical climate and bushland surrounds encourage termite and ant activity. Routine pest control in Fingal Head protects coastal homes from costly damage.
 
-Call me on 0405 508 035 or email thelocalpestco@bigpond.com for pest control in Fingal Head.
+**Call me on 0405 508 035** or email [thelocalpestco@bigpond.com](mailto:thelocalpestco@bigpond.com) for pest control in Fingal Head.

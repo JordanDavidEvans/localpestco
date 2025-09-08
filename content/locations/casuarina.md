@@ -11,14 +11,12 @@ question = "What pests are common in Casuarina?"
 answer = "Termites, ants and spiders are frequently treated in Casuarina properties."
 +++
 
-{{< requestedimg file="locations-casuarina-hero.jpg" alt="Casuarina's coastal suburb streets and homes" >}}
+## Pest Control in Casuarina
 
-I protect Casuarina homes and businesses with safe, effective pest treatments.
+I protect Casuarina homes and businesses with **safe**, effective pest treatments.
 
-{{< requestedimg file="locations-casuarina-detail.jpg" alt="Close-up of pests common in Casuarina residences" >}}
-
-## Why Pest Control is Needed in Casuarina
+### Why Pest Control is Needed in Casuarina
 
 Casuarina's seaside environment and lush landscaping create ideal conditions for termites and other insects. Regular pest control services in Casuarina keep local households and businesses protected.
 
-Call me on 0405 508 035 or email thelocalpestco@bigpond.com for Casuarina pest control.
+**Call me on 0405 508 035** or email [thelocalpestco@bigpond.com](mailto:thelocalpestco@bigpond.com) for Casuarina pest control.

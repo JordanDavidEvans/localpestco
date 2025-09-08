@@ -1,4 +1,3 @@
 {{- $alt := .Text | plainify -}}
 {{- if eq (len $alt) 0 -}}{{ warnf "Image missing alt text: %s" .Destination }}{{- end -}}
-{{- $location := cond (eq .Page.Section "locations") .Page.Title "Kingscliff" -}}
-<div class="image-placeholder">{{ $alt }} - Local Pest Co. {{ $location }} NSW</div>
+<div class="image-placeholder" aria-hidden="true"></div>
