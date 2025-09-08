@@ -2,6 +2,14 @@
 title = "Chinderah"
 description = "Pest control services for Chinderah."
 keywords = ["pest control Chinderah", "termite control Chinderah", "rodent pest control Chinderah", "ant pest control Chinderah", "spider pest control Chinderah", "cockroach control Chinderah"]
+
+[[faq]]
+question = "Do you offer pest control in Chinderah?"
+answer = "Yes, I'm available for all pest issues throughout Chinderah."
+
+[[faq]]
+question = "What pests are common in Chinderah?"
+answer = "Termites and mosquitoes are frequent concerns around Chinderah."
 +++
 
 <div class="hero">Chinderah hero placeholder</div>

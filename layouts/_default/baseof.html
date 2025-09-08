@@ -12,11 +12,30 @@
   <header>
     <p class="site-title"><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></p>
     <nav class="main-nav">
-      <a href="{{ "/" | relURL }}">Home</a>
-      <a href="{{ "/services/" | relURL }}">Services</a>
-      <a href="{{ "/locations/" | relURL }}">Locations</a>
-      <a href="{{ "/about/" | relURL }}">About</a>
-      <a href="{{ "/contact/" | relURL }}">Contact</a>
+      <ul>
+        <li><a href="{{ "/" | relURL }}">Home</a></li>
+        <li class="dropdown">
+          <a href="{{ "/services/" | relURL }}">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ "/eco-friendly-pest-control/" | relURL }}">Eco-Friendly Pest Control</a></li>
+            <li><a href="{{ "/termite-control-northern-rivers/" | relURL }}">Termite Control</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="{{ "/locations/" | relURL }}">Locations</a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ "/locations/cabarita-beach/" | relURL }}">Cabarita Beach</a></li>
+            <li><a href="{{ "/locations/casuarina/" | relURL }}">Casuarina</a></li>
+            <li><a href="{{ "/locations/chinderah/" | relURL }}">Chinderah</a></li>
+            <li><a href="{{ "/locations/cudgen/" | relURL }}">Cudgen</a></li>
+            <li><a href="{{ "/locations/fingal-head/" | relURL }}">Fingal Head</a></li>
+            <li><a href="{{ "/locations/kingscliff/" | relURL }}">Kingscliff</a></li>
+            <li><a href="{{ "/locations/pottsville/" | relURL }}">Pottsville</a></li>
+          </ul>
+        </li>
+        <li><a href="{{ "/about/" | relURL }}">About</a></li>
+        <li><a href="{{ "/contact/" | relURL }}">Contact</a></li>
+      </ul>
     </nav>
     <div class="header-actions">
       <a href="tel:0405508035" class="phone-link" aria-label="Call">
@@ -39,6 +58,6 @@
     <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}</p>
   </footer>
   {{ partial "analytics.html" . }}
-  <script src="{{ "/js/main.js" | relURL }}"></script>
+  <script src="{{ "/js/main.js" | relURL }}" defer></script>
 </body>
 </html>

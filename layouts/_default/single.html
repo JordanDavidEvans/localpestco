@@ -3,6 +3,7 @@
   <h1>{{ .Title }}</h1>
   {{ .Content }}
 </article>
+{{ partial "faq.html" . }}
 {{ with site.RegularPages.Related . }}
 <section>
   <h2>Related Content</h2>

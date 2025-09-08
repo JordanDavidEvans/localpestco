@@ -24,4 +24,33 @@ document.addEventListener('DOMContentLoaded', () => {
       mainNav.classList.toggle('open');
     });
   }
+
+  const tfElement = document.querySelector('[data-tf-live]');
+  if (tfElement) {
+    const loadTypeform = () => {
+      const s = document.createElement('script');
+      s.src = '//embed.typeform.com/next/embed.js';
+      s.defer = true;
+      document.body.appendChild(s);
+    };
+    const formObserver = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          loadTypeform();
+          obs.disconnect();
+        }
+      });
+    });
+    formObserver.observe(tfElement);
+  }
+
+  document.querySelectorAll('.faq details').forEach(detail => {
+    detail.addEventListener('toggle', function() {
+      if (this.open) {
+        document.querySelectorAll('.faq details').forEach(other => {
+          if (other !== this) other.open = false;
+        });
+      }
+    });
+  });
 });

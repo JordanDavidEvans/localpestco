@@ -1,6 +1,14 @@
 +++
 title = "Locations Around Kingscliff"
 description = "Pest control services in Kingscliff and nearby areas."
+
+[[faq]]
+question = "Do you service areas outside these locations?"
+answer = "Yes, contact me to see if I can travel to your community."
+
+[[faq]]
+question = "How soon can you visit my area?"
+answer = "I aim to provide same or next-day service where possible."
 +++
 
 I provide eco-friendly pest control across the Tweed Coast. Choose your area below.

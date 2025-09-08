@@ -2,6 +2,14 @@
 title = "Cudgen"
 description = "Pest control services for Cudgen."
 keywords = ["pest control Cudgen", "termite control Cudgen", "rodent pest control Cudgen", "cockroach pest control Cudgen", "ant pest control Cudgen", "spider pest control Cudgen"]
+
+[[faq]]
+question = "Do you offer pest control in Cudgen?"
+answer = "Yes, I'm available for all pest issues throughout Cudgen."
+
+[[faq]]
+question = "What pests are common in Cudgen?"
+answer = "Rodents, cockroaches and termites are commonly treated in Cudgen."
 +++
 
 <div class="hero">Cudgen hero placeholder</div>

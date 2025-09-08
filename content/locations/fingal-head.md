@@ -1,6 +1,14 @@
 +++
 title = "Fingal Head"
 description = "Pest control services for Fingal Head."
+
+[[faq]]
+question = "Do you offer pest control in Fingal Head?"
+answer = "Yes, I'm available for all pest issues throughout Fingal Head."
+
+[[faq]]
+question = "What pests are common in Fingal Head?"
+answer = "Termites and ants are regular problems in Fingal Head's subtropical climate."
 +++
 
 <div class="hero">Fingal Head hero placeholder</div>

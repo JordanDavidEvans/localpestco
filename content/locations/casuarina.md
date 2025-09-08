@@ -1,6 +1,14 @@
 +++
 title = "Casuarina"
 description = "Pest control services for Casuarina."
+
+[[faq]]
+question = "Do you offer pest control in Casuarina?"
+answer = "Yes, I'm available for all pest issues throughout Casuarina."
+
+[[faq]]
+question = "What pests are common in Casuarina?"
+answer = "Termites, ants and spiders are frequently treated in Casuarina properties."
 +++
 
 <div class="hero">Casuarina hero placeholder</div>
