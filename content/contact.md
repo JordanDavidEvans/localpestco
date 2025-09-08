@@ -12,11 +12,17 @@ question = "Can I get a quote over the phone?"
 answer = "Yes, I'm happy to provide estimates over the phone or via email."
 +++
 
-{{< requestedimg file="contact-1.jpg" alt="Map showing Kingscliff and the broader Tweed Coast service area" >}}
+## Get in Touch
 
-Phone: 0405 508 035
+### Call
+
+Phone: **0405 508 035**
+
+### Email
 
 Email: [thelocalpestco@bigpond.com](mailto:thelocalpestco@bigpond.com)
+
+### Address
 
 Address: 23 Dinsey Street, Kingscliff NSW 2487
 

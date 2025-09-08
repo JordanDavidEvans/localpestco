@@ -12,29 +12,27 @@ question = "Do you provide same-day service?"
 answer = "Yes, I strive to offer same-day or next-day visits across the Tweed Coast."
 +++
 
-{{< requestedimg file="services-1.jpg" alt="Technician applying eco-friendly pest spray around a Tweed Coast home" >}}
+## Comprehensive Pest Solutions
 
-I handle common pest issues with targeted treatments across Kingscliff, Casuarina, Cabarita Beach, and the wider Tweed Coast.
+I handle common pest issues with targeted treatments across **Kingscliff**, *Casuarina*, Cabarita Beach, and the wider Tweed Coast.
 
-## Pest Control Services
+### Pest Control Services
 
-### [Residential Pest Control](/residential-pest-control/)
+#### [Residential Pest Control](/residential-pest-control/)
 Safe, low-toxicity treatments for Tweed Coast homes.
 
-### [Commercial Pest Control](/commercial-pest-control/)
+#### [Commercial Pest Control](/commercial-pest-control/)
 Food-safe pest management for businesses.
 
-### [Timber Pest Control](/timber-pest-control/)
+#### [Timber Pest Control](/timber-pest-control/)
 Licensed inspections and treatments for timber pests.
 
-### [Eco-Friendly Pest Control](/eco-friendly-pest-control/)
+#### [Eco-Friendly Pest Control](/eco-friendly-pest-control/)
 Environmentally conscious pest solutions.
 
-### [Termite Control](/termite-control-northern-rivers/)
+#### [Termite Control](/termite-control-northern-rivers/)
 Targeted termite inspections and treatment programs.
 
 Every visit includes practical advice for prevention and long-term pest management.
 
-Call me on 0405 508 035 or email thelocalpestco@bigpond.com to book a service.
-
-{{< requestedimg file="services-2.jpg" alt="Banner highlighting additional pest control services" >}}
+**Call me on 0405 508 035** or email [thelocalpestco@bigpond.com](mailto:thelocalpestco@bigpond.com) to book a service.

@@ -12,14 +12,12 @@ question = "What pests are common in Pottsville?"
 answer = "Termites and cockroaches are frequent in Pottsville's warm, coastal environment."
 +++
 
-{{< requestedimg file="locations-pottsville-hero.jpg" alt="Beachfront scene or town centre view of Pottsville" >}}
+## Pest Control in Pottsville
 
-From Pottsville to Pottsville Beach, I deliver termite, rodent, ant, spider, and cockroach control with minimal environmental impact.
+From Pottsville to Pottsville Beach, I deliver **termite, rodent, ant, spider, and cockroach** control with minimal environmental impact.
 
-{{< requestedimg file="locations-pottsville-detail.jpg" alt="Close-up of pests commonly found in Pottsville homes" >}}
-
-## Why Pest Control is Needed in Pottsville
+### Why Pest Control is Needed in Pottsville
 
 Pottsville's humid summers and beachside setting draw termites and cockroaches. Comprehensive pest control in Pottsville and Pottsville Beach maintains healthy, pest-free properties.
 
-Call me on 0405 508 035 or email thelocalpestco@bigpond.com for pest control in Pottsville.
+**Call me on 0405 508 035** or email [thelocalpestco@bigpond.com](mailto:thelocalpestco@bigpond.com) for pest control in Pottsville.
