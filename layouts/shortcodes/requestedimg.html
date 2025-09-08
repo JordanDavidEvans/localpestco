@@ -1,3 +1,4 @@
 {{- $file := .Get "file" -}}
 {{- $alt := .Get "alt" -}}
-<img src="/image-requests/{{ $file }}" alt="{{ $alt }}" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/600x300?text=Image+Coming+Soon';" />
+{{- $location := cond (eq .Page.Section "locations") .Page.Title "Kingscliff" -}}
+<img src="/image-requests/{{ $file }}" alt="{{ $alt }} - Local Pest Co. {{ $location }} NSW" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/600x300?text=Image+Coming+Soon';" />

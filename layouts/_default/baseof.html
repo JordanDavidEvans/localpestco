@@ -19,7 +19,8 @@
   </div>
   <a class="skip-link" href="#main-content">Skip to content</a>
   <header>
-    <div class="logo"><a href="{{ "/" | relURL }}"><img src="{{ "/images/logo-placeholder.svg" | relURL }}" alt="{{ .Site.Title }} logo"></a></div>
+    {{- $location := cond (eq .Section "locations") .Title "Kingscliff" -}}
+    <div class="logo"><a href="{{ "/" | relURL }}"><img src="{{ "/images/logo-placeholder.svg" | relURL }}" alt="{{ .Site.Title }} logo - Local Pest Co. {{ $location }} NSW"></a></div>
     <nav class="main-nav">
       <ul>
         <li><a href="{{ "/" | relURL }}">Home</a></li>
