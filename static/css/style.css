@@ -155,6 +155,17 @@ footer {
   padding: 1rem;
 }
 
+.social-links {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.social-links a svg {
+  width: 24px;
+  height: 24px;
+}
+
 nav a {
   transition: color 0.3s ease;
 }
