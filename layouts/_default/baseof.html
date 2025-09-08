@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{ partial "seo/meta.html" . }}
   {{ partial "seo/schema.html" . }}
+  {{ partial "analytics.html" . }}
   <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
   <script>
     if (document.cookie.split(';').some(c => c.trim() === 'splashSeen=true')) {
@@ -96,7 +97,6 @@
   <footer>
     <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}</p>
   </footer>
-  {{ partial "analytics.html" . }}
   <script src="{{ "/js/main.js" | relURL }}" defer></script>
 </body>
 </html>
