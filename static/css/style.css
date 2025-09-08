@@ -54,6 +54,8 @@ nav a {
 
 main {
   padding: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .hero {
@@ -89,9 +91,39 @@ main {
   transform: none;
 }
 
+.page-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.content-row img {
+  flex: 1 1 200px;
+  max-width: 300px;
+  border-radius: 4px;
+}
+
+.content-row .text {
+  flex: 2 1 300px;
+}
+
 @media (max-width: 600px) {
   nav a {
     display: block;
     margin: 0.5rem 0;
+  }
+
+  .content-row {
+    flex-direction: column;
   }
 }

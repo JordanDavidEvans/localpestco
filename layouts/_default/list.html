@@ -1,11 +1,15 @@
 {{ define "main" }}
 {{ partial "breadcrumbs.html" . }}
-<section>
+<section class="page-list">
   <h1>{{ .Title }}</h1>
-  <ul>
-    {{ range .Pages }}
-    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-    {{ end }}
-  </ul>
+  {{ range .Pages }}
+  <article class="content-row">
+    <img src="{{ with .Params.image }}{{ . }}{{ else }}https://placehold.co/400x300{{ end }}" alt="{{ .Title }}" loading="lazy">
+    <div class="text">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
+    </div>
+  </article>
+  {{ end }}
 </section>
 {{ end }}
