@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+  {{ with .Params.description }}
+  <meta name="description" content="{{ . }}">
+  {{ end }}
+  {{ with .Params.keywords }}
+  <meta name="keywords" content="{{ delimit . ", " }}">
+  {{ end }}
 </head>
 <body>
   <header>
