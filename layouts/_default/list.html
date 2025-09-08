@@ -1,6 +1,5 @@
 {{ define "main" }}
 <section class="page-list">
-  <h1>{{ .Title }}</h1>
   {{ range .Pages }}
   <article class="content-row">
     {{- $location := cond (eq .Section "locations") .Title "Kingscliff" -}}
