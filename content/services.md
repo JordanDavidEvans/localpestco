@@ -21,6 +21,8 @@ I handle common pest issues with targeted treatments across Kingscliff, Casuarin
 - Cockroach and ant solutions
 - Spider control
 
+For solutions tailored to your property, see our [residential pest control](/residential-pest-control/) and [commercial pest control](/commercial-pest-control/) services.
+
 Every visit includes practical advice for prevention and long-term pest management.
 
 Call me on 0405 508 035 or email thelocalpestco@bigpond.com to book a service.
