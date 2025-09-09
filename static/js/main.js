@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  const header = document.querySelector('header');
+  const header = document.querySelector('.site-header');
   if (header) {
     const activateAt = 300;
     const handleScroll = () => {
