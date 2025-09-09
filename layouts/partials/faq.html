@@ -1,5 +1,5 @@
 {{- if .Params.faq }}
-<section class="faq">
+<section class="faq"{{ with .Params.faq_id }} id="{{ . }}"{{ end }}>
   <h2>FAQs</h2>
   {{ range .Params.faq }}
   <details>
