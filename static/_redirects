@@ -1,6 +1,6 @@
 # Redirect old service pages to service landing page
 /ant-control-kingscliff/ /services 301
-/snake-control-kingscliff/ /services 301
+/snake-control-kingscliff/ /snakes-kingscliff 301
 /eco-friendly-pest-control-kingscliff/ /services 301
 /termite-inspection-kingscliff/ /services 301
 /termite-control-kingscliff/ /services 301
