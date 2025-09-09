@@ -41,7 +41,8 @@ header {
   display: flex;
   align-items: center;
   gap: 1rem;
-  transition: padding 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: padding 0.3s ease, box-shadow 0.3s ease;
   font-family: 'Knewave', cursive;
 }
 
@@ -328,19 +329,26 @@ main {
   flex: 2 1 300px;
 }
 
-@media (max-width: 600px) {
-  nav a {
-    display: block;
-    margin: 0.5rem 0;
-  }
+  @media (max-width: 600px) {
+    nav a {
+      display: block;
+      margin: 0.5rem 0;
+    }
 
-  header {
-    flex-wrap: wrap;
-  }
+    header {
+      flex-wrap: wrap;
+      padding: 1rem;
+      justify-content: center;
+      text-align: center;
+    }
 
-  .main-nav {
-    display: none;
-  }
+    .header-actions {
+      margin-left: 0;
+    }
+
+    .main-nav {
+      display: none;
+    }
 
   .mobile-nav.open {
     display: flex;
