@@ -32,7 +32,7 @@ img {
   display: block;
 }
 
-header {
+.site-header {
   background-color: var(--color-dark-bg);
   padding: 2rem;
   position: sticky;
@@ -41,12 +41,12 @@ header {
   display: flex;
   align-items: center;
   gap: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   transition: padding 0.3s ease, box-shadow 0.3s ease;
   font-family: 'Knewave', cursive;
 }
 
-header .main-nav ul {
+.site-header .main-nav ul {
   display: flex;
   flex-wrap: nowrap;
   margin: 0;
@@ -56,20 +56,20 @@ header .main-nav ul {
   transition: gap 0.3s ease;
 }
 
-header .main-nav li {
+.site-header .main-nav li {
   position: relative;
   margin: 0;
 }
 
-header .main-nav a,
+.site-header .main-nav a,
 .mobile-nav a {
   color: var(--color-black);
   text-decoration: none;
 }
 
-header .main-nav a:hover,
-header .main-nav a:focus,
-header .main-nav a:active,
+.site-header .main-nav a:hover,
+.site-header .main-nav a:focus,
+.site-header .main-nav a:active,
 .mobile-nav a:hover,
 .mobile-nav a:focus,
 .mobile-nav a:active {
@@ -91,15 +91,15 @@ header .main-nav a:active,
   transition: width 0.3s ease, height 0.3s ease;
 }
 
-header.scrolled {
+.site-header.scrolled {
   padding: 0.5rem;
 }
 
-header.scrolled .main-nav ul {
+.site-header.scrolled .main-nav ul {
   gap: 1rem;
 }
 
-header.scrolled .logo img {
+.site-header.scrolled .logo img {
   width: 50px;
   height: 50px;
 }
@@ -328,27 +328,25 @@ main {
 .content-row .text {
   flex: 2 1 300px;
 }
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  .site-header {
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
 
-  @media (max-width: 600px) {
-    nav a {
-      display: block;
-      margin: 0.5rem 0;
-    }
+  .header-actions {
+    margin-left: 0;
+  }
 
-    header {
-      flex-wrap: wrap;
-      padding: 1rem;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .header-actions {
-      margin-left: 0;
-    }
-
-    .main-nav {
-      display: none;
-    }
+  .main-nav {
+    display: none;
+  }
 
   .mobile-nav.open {
     display: flex;
