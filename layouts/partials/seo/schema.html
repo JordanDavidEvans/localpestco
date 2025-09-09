@@ -6,6 +6,17 @@
 {{- with .Site.Params.logo }}{{ $org = merge $org (dict "logo" (absURL .)) }}{{ end -}}
 {{- $schemas = $schemas | append $org -}}
 
+{{- /* LocalBusiness schema */ -}}
+{{- $areas := slice "Kingscliff" "Casuarina" "Cabarita" "Pottsville" "Murwillumbah" "Chinderah" "Cudgen" "Fingal Head" "Banora Point" "Terranora" "Tweed Heads" -}}
+{{- $sameAs := slice -}}
+{{- with .Site.Params.social.facebook }}{{ $sameAs = $sameAs | append . }}{{ end -}}
+{{- with .Site.Params.social.twitter }}{{ $sameAs = $sameAs | append . }}{{ end -}}
+{{- $lb := dict "@type" "LocalBusiness" "@id" (printf "%s#localbusiness" $base) "name" .Site.Title "url" $base "telephone" "0405 508 035" "areaServed" $areas "sameAs" $sameAs "address" (dict "@type" "PostalAddress" "addressLocality" "Kingscliff" "addressRegion" "NSW" "addressCountry" "AU") -}}
+{{- $hours := slice (dict "@type" "OpeningHoursSpecification" "dayOfWeek" "Monday" "opens" "08:00" "closes" "17:00") (dict "@type" "OpeningHoursSpecification" "dayOfWeek" "Tuesday" "opens" "08:00" "closes" "17:00") (dict "@type" "OpeningHoursSpecification" "dayOfWeek" "Wednesday" "opens" "08:00" "closes" "17:00") (dict "@type" "OpeningHoursSpecification" "dayOfWeek" "Thursday" "opens" "08:00" "closes" "17:00") (dict "@type" "OpeningHoursSpecification" "dayOfWeek" "Friday" "opens" "08:00" "closes" "17:00") -}}
+{{- $lb = merge $lb (dict "openingHoursSpecification" $hours) -}}
+{{- with .Site.Params.logo }}{{ $lb = merge $lb (dict "image" (absURL .)) }}{{ end -}}
+{{- $schemas = $schemas | append $lb -}}
+
 {{- $website := dict "@type" "WebSite" "name" .Site.Title "url" $base -}}
 {{- with .Site.Params.search.url -}}
   {{- $website = merge $website (dict "potentialAction" (dict "@type" "SearchAction" "target" (printf "%s?q={search_term_string}" .) "query-input" "required name=search_term_string")) -}}
@@ -27,6 +38,19 @@
 {{- end -}}
 {{- if gt (len $crumbs) 0 -}}
   {{- $schemas = $schemas | append (dict "@type" "BreadcrumbList" "itemListElement" $crumbs) -}}
+{{- end -}}
+
+{{- if .Params.faq -}}
+  {{- $faqitems := slice -}}
+  {{- range .Params.faq -}}
+    {{- $faqitems = $faqitems | append (dict "@type" "Question" "name" .question "acceptedAnswer" (dict "@type" "Answer" "text" .answer)) -}}
+  {{- end -}}
+  {{- $schemas = $schemas | append (dict "@type" "FAQPage" "mainEntity" $faqitems) -}}
+{{- end -}}
+
+{{- with .Params.service -}}
+  {{- $svc := merge (dict "@type" "Service") . -}}
+  {{- $schemas = $schemas | append $svc -}}
 {{- end -}}
 
 {{- if .IsPage -}}

@@ -1,6 +1,6 @@
 # Redirect old service pages to service landing page
 /ant-control-kingscliff/ /services 301
-/snake-control-kingscliff/ /services 301
+/snake-control-kingscliff/ /pest-control-kingscliff/#we-dont-do 301
 /eco-friendly-pest-control-kingscliff/ /services 301
 /termite-inspection-kingscliff/ /services 301
 /termite-control-kingscliff/ /services 301
@@ -9,19 +9,21 @@
 /emergency-pest-control-kingscliff/ /services 301
 /german-cockroach-control-kingscliff/ /services 301
 /spider-identification-kingscliff/ /services 301
-/possum-removal-kingscliff/ /services 301
-/bird-control-kingscliff/ /services 301
+/possum-removal-kingscliff/ /pest-control-kingscliff/#we-dont-do 301
+/bird-control-kingscliff/ /pest-control-kingscliff/#we-dont-do 301
 /moth-control-kingscliff/ /services 301
 /tick-control-kingscliff/ /services 301
 /mosquito-control-kingscliff/ /services 301
 /residential-pest-control-in-kingscliff/ /services 301
-/rodent-control-kingscliff/ /services 301
+/rodent-control-kingscliff/ /pest-control-kingscliff/#we-dont-do 301
 /silverfish-control-kingscliff/ /services 301
 /spider-control-kingscliff/ /services 301
 /wasp-and-bee-removal-kingscliff/ /services 301
 /flea-control-kingscliff/ /services 301
 /bed-bug-treatment-kingscliff/ /services 301
 /bed-bug-inspection-kingscliff/ /services 301
+/rodent-pest-control /pest-control-kingscliff/#we-dont-do 301
+/rodent-pest-control/ /pest-control-kingscliff/#we-dont-do 301
 
 # Redirect location pages to locations landing page
 /cabarita-beach/ /locations 301
@@ -36,7 +38,7 @@
 /commercial-pest-control-solutions-for-businesses-7-shocking-benefits/ / 301
 /pest-control-for-cafes-offices-and-shops-2025-secrets-revealed/ / 301
 /how-local-pest-companies-support-community-health-5-powerful-ways/ / 301
-/rodent-control-services-what-works-best-find-out-for-2025/ / 301
+/rodent-control-services-what-works-best-find-out-for-2025/ /pest-control-kingscliff/#we-dont-do 301
 /top-termite-treatment-options-in-australia-2025-kingscliff-guide/ / 301
 /choosing-a-safe-and-eco-friendly-pest-control-option-2025-guide/ / 301
 /number-of-nsw-smokers-drops-to-lowest-levels-on-record-see-how/ / 301
