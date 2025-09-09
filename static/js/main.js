@@ -1,7 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const elements = document.querySelectorAll('p, h1, h2, h3, img, .fade-in-element');
+  const textEls = document.querySelectorAll('p, h1, h2, h3');
+  textEls.forEach(el => {
+    el.classList.add('scroll-fade-text');
+    const text = el.textContent;
+    el.textContent = '';
+    text.split('').forEach((char, i) => {
+      const span = document.createElement('span');
+      span.textContent = char === ' ' ? '\u00A0' : char;
+      span.style.transitionDelay = `${i * 0.05}s`;
+      el.appendChild(span);
+    });
+  });
+
+  const elements = document.querySelectorAll('img, .fade-in-element, .scroll-fade-text');
   elements.forEach(el => {
-    el.classList.add('fade-in-element');
+    if (!el.classList.contains('scroll-fade-text')) {
+      el.classList.add('fade-in-element');
+    }
   });
 
   const observer = new IntersectionObserver(entries => {
@@ -13,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { threshold: 0.1 });
 
-  document.querySelectorAll('.fade-in-element').forEach(el => {
+  document.querySelectorAll('.fade-in-element, .scroll-fade-text').forEach(el => {
     observer.observe(el);
   });
 
@@ -74,9 +89,9 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
           splash.classList.add('hide');
         }, 3000);
-        setTimeout(() => {
+        splash.addEventListener('transitionend', () => {
           splash.remove();
-        }, 5000);
+        }, { once: true });
       });
     }
   }
