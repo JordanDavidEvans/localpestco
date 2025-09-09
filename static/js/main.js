@@ -68,15 +68,69 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       window.addEventListener('load', () => {
         document.cookie = 'splashSeen=true; path=/; max-age=31536000';
-        setTimeout(() => {
-          splash.classList.add('fade-english');
-        }, 1000);
+        const canvas = document.getElementById('flag');
+        if (canvas) {
+          const ctx = canvas.getContext('2d');
+          const resize = () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+          };
+          resize();
+          window.addEventListener('resize', resize);
+          let phase = 0;
+          let split = 0;
+          let yellowAlpha = 1;
+          let showWelcome = true;
+          const draw = () => {
+            const w = canvas.width;
+            const h = canvas.height;
+            ctx.clearRect(0, 0, w, h);
+            if (phase === 0) {
+              ctx.fillStyle = '#000';
+              ctx.fillRect(0, 0, w, h / 2);
+              ctx.fillStyle = '#c60000';
+              ctx.fillRect(0, h / 2, w, h / 2);
+            } else {
+              ctx.fillStyle = '#000';
+              ctx.fillRect(-split, 0, w, h / 2);
+              ctx.fillStyle = '#c60000';
+              ctx.fillRect(split, h / 2, w, h / 2);
+            }
+            ctx.fillStyle = `rgba(255,255,0,${yellowAlpha})`;
+            ctx.beginPath();
+            ctx.arc(w / 2, h / 2, Math.min(w, h) / 4, 0, Math.PI * 2);
+            ctx.fill();
+            if (showWelcome) {
+              ctx.fillStyle = '#fff';
+              ctx.font = `${Math.min(w, h) / 12}px sans-serif`;
+              ctx.textAlign = 'center';
+              ctx.fillText('Welcome', w / 2, h / 2 + Math.min(w, h) / 24);
+            }
+            requestAnimationFrame(draw);
+          };
+          const startSplit = () => {
+            phase = 1;
+            const splitTimer = setInterval(() => {
+              split += 8;
+              if (split >= canvas.width / 2) clearInterval(splitTimer);
+            }, 30);
+            setTimeout(() => {
+              showWelcome = false;
+              const fadeTimer = setInterval(() => {
+                yellowAlpha -= 0.02;
+                if (yellowAlpha <= 0) clearInterval(fadeTimer);
+              }, 30);
+            }, 1500);
+          };
+          draw();
+          setTimeout(startSplit, 1000);
+        }
         setTimeout(() => {
           splash.classList.add('hide');
-        }, 3000);
+        }, 4500);
         setTimeout(() => {
           splash.remove();
-        }, 5000);
+        }, 6500);
       });
     }
   }
