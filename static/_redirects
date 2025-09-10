@@ -51,9 +51,32 @@
 /pest-control-kingscliff-top-2025-tips-to-protect-your-home-now/ / 301
 /avoid-these-costly-termite-control-kingscliff-mistakes-now/ / 301
 
-# Redirect other taxonomy pages to home
-/category/* / 301
-/tag/* / 301
-/author/* / 301
-/news/* / 301
+# Redirect tag pages to relevant sections
+/tag/*termite* /termite-control-northern-rivers 301
+/tag/white-ants /termite-control-northern-rivers 301
+/tag/*roach* /services 301
+/tag/bed-bug-* /services 301
+/tag/*bug* /services 301
+/tag/ant-* /services 301
+/tag/*rodent* /services 301
+/tag/*rat* /services 301
+/tag/*mice* /services 301
+/tag/*mouse* /services 301
+/tag/*pest* /services 301
+/tag/*exterminator* /services 301
+/tag/*extermination* /services 301
+/tag/*spray* /services 301
+/tag/*inspection* /services 301
+/tag/rental-property /services 301
+/tag/property-management /services 301
+/tag/landlord-responsibilities /services 301
+/tag/home-prevention /services 301
+/tag/cost-compariso /services 301
+/tag/local-services /services 301
+/tag/* /blog 301
+
+# Redirect category and other taxonomy pages to blog
+/category/* /blog 301
+/author/* /blog 301
+/news/* /blog 301
 
