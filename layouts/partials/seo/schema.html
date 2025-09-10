@@ -40,5 +40,5 @@
 {{- end -}}
 
 <script type="application/ld+json">
-{{ $schemas | jsonify }}
+{{ $schemas | jsonify | safeJS }}
 </script>
