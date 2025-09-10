@@ -35,7 +35,7 @@ In New South Wales, possums are protected. The National Parks and Wildlife Act r
 - Trapped possums must be released on the same property within 50 metres of where they were caught.
 - Relocation or harm without a permit is illegal.
 
-For more detail, see the [NSW Department of Planning and Environment](https://www.environment.nsw.gov.au/topics/animals-and-plants/native-animals/native-animal-facts/possum) guidelines.
+For more detail, see the [NSW Department of Planning and Environment](https://www.environment.nsw.gov.au/licences-and-permits/wildlife-licences/catch-and-release-licence/possum-catch-and-release-licences) guidelines.
 
 ## Need General Pest Control?
 

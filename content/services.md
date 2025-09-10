@@ -33,6 +33,10 @@ Environmentally conscious pest solutions.
 #### [Termite Control](/termite-control-northern-rivers/)
 Targeted termite inspections and treatment programs.
 
+### Services I Don't Offer
+
+Some pests require specialist attention. While I don't provide removal for wildlife such as possums or snakes, I can share educational resources or put you in touch with a licensed professional who can help.
+
 Every visit includes practical advice for prevention and long-term pest management.
 
 **Call me on 0405 508 035** or email [thelocalpestco@bigpond.com](mailto:thelocalpestco@bigpond.com) to book a service.
