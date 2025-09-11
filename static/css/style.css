@@ -411,3 +411,37 @@ main {
   opacity: 0;
   visibility: hidden;
 }
+
+.developer-credit {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.tweed-credit {
+  background-color: #000;
+  color: #00ff00;
+  font-family: monospace;
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.tweed-credit:hover,
+.tweed-credit:focus {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+.tweed-credit .cursor {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
