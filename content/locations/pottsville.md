@@ -1,23 +1,66 @@
 +++
-title = "Pottsville"
-description = "Pest control services for Pottsville and Pottsville Beach."
-keywords = ["pest control Pottsville", "termite control Pottsville", "rodent pest control Pottsville", "ant pest control Pottsville Beach", "cockroach pest control Pottsville", "spider pest control Pottsville Beach"]
+title = "Pest Control Pottsville | Local Pest Co"
+description = "Licensed, eco-conscious pest control in Pottsville for homes and businesses. Same or next-day service across Tweed Coast."
+keywords = [
+  "Pottsville pest control",
+  "Tweed Coast termite treatment",
+  "rodent removal Pottsville",
+  "ant exterminator Hastings Point"
+]
 
-[[faq]]
-question = "Do you offer pest control in Pottsville?"
-answer = "Yes, I service Pottsville and Pottsville Beach for all pest issues."
-
-[[faq]]
-question = "What pests are common in Pottsville?"
-answer = "Termites and cockroaches are frequent in Pottsville's warm, coastal environment."
+[seo]
+canonical = "https://localpest.co/locations/pottsville/"
+h1 = "Local Pest Control in Pottsville"
+subhead = "Licensed NSW EPA technician providing targeted, low-tox treatments across Tweed Coast."
 +++
 
-## Pest Control in Pottsville
+# {{< seo.h1 >}}
 
-From Pottsville to Pottsville Beach, I deliver **termite, rodent, ant, spider, and cockroach** control with minimal environmental impact.
+Licensed NSW EPA pest management technician (Lic. 5073077) delivering targeted, low-tox treatments for homes and businesses in Pottsville. Same or next-day support across Tweed Coast.
 
-### Why Pest Control is Needed in Pottsville
+[Call 0405 508 035](tel:0405508035) — Book with Shannon.  
+[Email for a quote](mailto:thelocalpestco@bigpond.com) — Reply within one business day.
 
-Pottsville's humid summers and beachside setting draw termites and cockroaches. Comprehensive pest control in Pottsville and Pottsville Beach maintains healthy, pest-free properties.
+## Why choose Local Pest Co
+- Fast visits across nearby suburbs  
+- Targeted, low-tox treatments considering kids, pets, and pollinators  
+- Clear quotes before any work, plus simple prevention tips  
+- Aboriginal-owned, with practical knowledge of local coastal and hinterland pests
 
-**Call me on 0405 508 035** or email [thelocalpestco@bigpond.com](mailto:thelocalpestco@bigpond.com) for pest control in Pottsville.
+## What we treat
+Termites, rodents, ants, spiders, cockroaches, and other common Tweed Coast pests for homes and workplaces. See the full list on our [Services](/services/) page.
+
+### How it works
+1. **Inspect** — Entry points, moisture, and activity  
+2. **Treat** — Targeted products suited to your property  
+3. **Protect** — Prevention advice and monitoring if needed  
+4. **Follow up** — Check results and schedule future checks when required
+
+## Areas we serve
+Pottsville, Hastings Point, Wooyung, and Bogangar plus surrounding Tweed Coast communities. See more suburbs on our [Locations](/locations/) page. Prefer to chat? Call 0405 508 035.
+
+## Caring for Country in our work
+Caring for Country guides every visit: respect for land, waterways and people. We assess sites carefully, choose targeted treatments, and avoid harm to non-target species — combining cultural responsibility with effective modern practice. Learn more on our [About](/about/) page.
+
+## FAQs
+**Is your pest control safe for kids and pets?**  
+Yes. I use targeted, low-tox options and explain what each product does. Please cover food bowls and toys before I start. Once areas are dry, kids and pets can return as normal.
+
+**How soon can you visit my place?**  
+Most jobs happen the same or next day. I’ll confirm timing when you call or email. If weather slows things down, I’ll keep you updated.
+
+**Do you handle termites?**  
+Yes — inspections, treatments and follow-up plans. NSW EPA licence 5073077 (timber pests). I’ll explain any treatment zones in plain language and provide written notes after the visit.
+
+**Is there a service warranty?**  
+Yes — tailored to the pest. I’ll explain coverage length before treatment. If pests return during that period, I come back at no labour cost.
+
+**What should I do before you arrive?**  
+Tidy access to affected rooms and move pets to a safe area. Let me know about allergies or concerns beforehand so I can choose the right products.
+
+## Contact
+**Local Pest Co**  
+Phone: [0405 508 035](tel:0405508035)  
+Email: [thelocalpestco@bigpond.com](mailto:thelocalpestco@bigpond.com)  
+Address: 23 Dinsey Street, Kingscliff NSW 2487
+
