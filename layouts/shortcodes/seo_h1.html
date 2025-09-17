@@ -1,0 +1,13 @@
+{{- $seo := .Page.Params.seo -}}
+{{- $h1 := .Page.Title -}}
+{{- $subhead := "" -}}
+{{- with $seo }}
+  {{- with .h1 }}{{ $h1 = . }}{{ end -}}
+  {{- with .subhead }}{{ $subhead = . }}{{ end -}}
+{{- end -}}
+{{- if $h1 }}
+<h1>{{ $h1 | htmlEscape }}</h1>
+{{- end }}
+{{- if $subhead }}
+<p class="subhead">{{ $subhead | htmlEscape }}</p>
+{{- end -}}

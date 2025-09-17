@@ -14,7 +14,7 @@ h1 = "Local Pest Control in Hastings Point"
 subhead = "Licensed NSW EPA technician providing targeted, low-tox treatments across Tweed Coast."
 +++
 
-# {{< seo.h1 >}}
+{{< seo_h1 >}}
 
 Licensed NSW EPA pest management technician (Lic. 5073077) delivering targeted, low-tox treatments for homes and businesses in Hastings Point. Same or next-day support across Tweed Coast.
 

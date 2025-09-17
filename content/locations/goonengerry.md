@@ -14,7 +14,7 @@ h1 = "Local Pest Control in Goonengerry"
 subhead = "Licensed NSW EPA technician providing targeted, low-tox treatments across Byron Shire."
 +++
 
-# {{< seo.h1 >}}
+{{< seo_h1 >}}
 
 Licensed NSW EPA pest management technician (Lic. 5073077) delivering targeted, low-tox treatments for homes and businesses in Goonengerry. Same or next-day support across Byron Shire.
 
