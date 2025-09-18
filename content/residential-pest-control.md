@@ -1,8 +1,19 @@
 +++
-title = "Residential Pest Control"
-description = "Safe, effective pest control for Tweed Coast homes."
+title = "Residential Pest Control Kingscliff | Local Pest Co"
+description = "Licensed residential pest control for Kingscliff homes with low-tox treatments, detailed inspections, and prevention advice across the Tweed Coast."
+meta_desc = "Licensed residential pest control for Kingscliff homes with low-tox treatments, detailed inspections, and prevention advice across the Tweed Coast."
 keywords = ["residential pest control", "home pest control Tweed Coast", "family safe pest treatments"]
+[seo]
+h1 = "Residential Pest Control in Kingscliff"
+subhead = "Low-tox home pest treatments for families across Kingscliff and the Tweed Coast."
+description = "Licensed residential pest control for Kingscliff homes with low-tox treatments, detailed inspections, and prevention advice across the Tweed Coast."
+[service]
+name = "Residential Pest Control"
+serviceType = "Residential pest control"
+areaServed = ["Kingscliff NSW", "Tweed Coast NSW"]
 +++
+
+{{< seo_h1 >}}
 
 Keeping your home pest-free protects your family and property. I provide targeted treatments for ants, cockroaches, rodents, spiders and more across the Tweed Coast.
 

@@ -1,0 +1,5 @@
+{{- $subhead := "" -}}
+{{- with .Params.seo }}
+  {{- with .subhead }}{{ $subhead = . }}{{ end -}}
+{{- end -}}
+{{- $subhead -}}

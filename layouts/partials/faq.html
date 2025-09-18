@@ -1,11 +1,13 @@
 {{- if .Params.faq }}
-<section class="faq">
-  <h2>FAQs</h2>
-  {{ range .Params.faq }}
-  <details>
-    <summary>{{ .question }}</summary>
-    <p>{{ .answer }}</p>
-  </details>
-  {{ end }}
+<section class="faq" aria-labelledby="faq-heading">
+  <h2 id="faq-heading">Frequently Asked Questions</h2>
+  <div class="faq-items">
+    {{ range $index, $item := .Params.faq }}
+    <article class="faq-item">
+      <h3 id="faq-{{ add $index 1 }}">{{ $item.question | htmlEscape }}</h3>
+      <div class="faq-answer">{{ $item.answer | markdownify }}</div>
+    </article>
+    {{ end }}
+  </div>
 </section>
 {{- end }}

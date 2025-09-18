@@ -1,8 +1,19 @@
 +++
-title = "Commercial Pest Control"
-description = "Food-safe pest control for Tweed Coast businesses."
+title = "Commercial Pest Control Kingscliff | Local Pest Co"
+description = "Food-safe pest control for Kingscliff and Tweed Coast businesses, covering cafes, offices, and care facilities with compliant low-tox treatments."
+meta_desc = "Food-safe pest control for Kingscliff and Tweed Coast businesses, covering cafes, offices, and care facilities with compliant low-tox treatments."
 keywords = ["commercial pest control", "restaurant pest management", "nursing home pest control"]
+[seo]
+h1 = "Commercial Pest Control in Kingscliff"
+subhead = "Food-safe pest programs for cafes, offices, and care facilities across the Tweed Coast."
+description = "Food-safe pest control for Kingscliff and Tweed Coast businesses, covering cafes, offices, and care facilities with compliant low-tox treatments."
+[service]
+name = "Commercial Pest Control"
+serviceType = "Commercial pest control"
+areaServed = ["Kingscliff NSW", "Tweed Coast NSW"]
 +++
+
+{{< seo_h1 >}}
 
 Businesses need reliable pest management that protects staff, customers and stock. I service shops, offices and specialised sites across the region.
 

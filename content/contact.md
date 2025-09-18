@@ -1,7 +1,12 @@
 +++
-title = "Contact"
-description = "Contact Local Pest Co for Kingscliff and Tweed Coast pest control quotes and bookings."
+title = "Contact Local Pest Co | Kingscliff Pest Control"
+description = "Contact Local Pest Co for Kingscliff and Tweed Coast pest control quotes, bookings, and advice from licensed technician Shannon Kitchener."
+meta_desc = "Contact Local Pest Co for Kingscliff and Tweed Coast pest control quotes, bookings, and advice from licensed technician Shannon Kitchener."
 keywords = ["contact pest control Kingscliff", "Tweed Coast pest service phone", "email Local Pest Co"]
+[seo]
+h1 = "Contact Local Pest Co"
+subhead = "Book licensed pest control across Kingscliff and the Tweed Coast by phone, email, or the enquiry form."
+description = "Contact Local Pest Co for Kingscliff and Tweed Coast pest control quotes, bookings, and advice from licensed technician Shannon Kitchener."
 
 [[faq]]
 question = "How quickly will you respond to messages?"
@@ -11,6 +16,10 @@ answer = "I aim to respond within one business day."
 question = "Can I get a quote over the phone?"
 answer = "Yes, I'm happy to provide estimates over the phone or via email."
 +++
+
+{{< seo_h1 >}}
+
+Reach out for same or next-day pest control across Kingscliff and the Tweed Coast. I answer every enquiry personally and confirm booking times quickly.
 
 ## Get in Touch
 

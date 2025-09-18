@@ -1,7 +1,12 @@
 +++
-title = "Possum Removal in Kingscliff"
-description = "We don't remove possums but can connect you with licensed catchers and explain NSW laws."
+title = "Possum Removal Kingscliff | Local Pest Co"
+description = "Guidance on possum removal in Kingscliff, NSW, with licensed wildlife contacts, legal requirements, and alternative pest control support."
+meta_desc = "Guidance on possum removal in Kingscliff, NSW, with licensed wildlife contacts, legal requirements, and alternative pest control support."
 keywords = ["possum removal kingscliff", "kingscliff possum catcher", "nsw possum laws"]
+[seo]
+h1 = "Possum Removal Advice for Kingscliff"
+subhead = "Understand NSW wildlife laws and find licensed possum catchers near Kingscliff."
+description = "Guidance on possum removal in Kingscliff, NSW, with licensed wildlife contacts, legal requirements, and alternative pest control support."
 
 [[faq]]
 question = "Do you remove possums?"
@@ -15,6 +20,10 @@ answer = "Only licensed removalists may trap and relocate possums, and they must
 question = "What are the NSW laws about possum removal?"
 answer = "It's illegal to harm or relocate possums without a licence. Licensed catchers must release them nearby after dark."
 +++
+
+{{< seo_h1 >}}
+
+Possums are protected wildlife in New South Wales, so removal must be handled by licensed specialists who follow relocation rules and respect the animals.
 
 ## Possums in Kingscliff
 

@@ -1,29 +1,74 @@
 {{- $env := getenv "HUGO_ENV" | default "production" -}}
 {{- $prod := .Site.Params.productionBaseURL | default .Site.BaseURL -}}
+{{- $seo := .Params.seo -}}
 {{- $siteTitle := .Site.Title -}}
-{{- $title := .Params.title | default .Title -}}
+{{- $baseTitle := .Title -}}
+{{- with $seo }}
+  {{- with .title }}{{ $baseTitle = . }}{{ end -}}
+{{- end -}}
+{{- if not $baseTitle }}
+  {{- $baseTitle = $siteTitle -}}
+{{- end -}}
+{{- $title := $baseTitle -}}
 {{- if not (in (lower $title) (lower $siteTitle)) -}}
   {{- $title = printf "%s | %s" $title $siteTitle -}}
 {{- end -}}
 {{- with .Site.Params.titleSuffix -}}
   {{- $title = printf "%s%s" $title . -}}
 {{- end -}}
-<title>{{ $title }}</title>
-{{- if not .Title }}{{ warnf "Missing title for %s" .RelPermalink }}{{ end -}}
 
-{{- $desc := .Params.meta_desc | default .Params.description | default (.Summary | plainify) | default .Site.Params.description -}}
-{{- if and (not .Params.meta_desc) (not .Params.description) }}{{ warnf "Missing meta description for %s" .RelPermalink }}{{ end -}}
+{{- $desc := "" -}}
+{{- with $seo }}
+  {{- with .description }}{{ $desc = . }}{{ end -}}
+{{- end -}}
+  {{- if not $desc }}
+    {{- $desc = .Params.meta_desc | default .Params.description | default (.Summary | plainify) | default .Site.Params.description -}}
+  {{- end -}}
+  {{- if and (eq .RelPermalink "/404.html") (not $desc) -}}
+    {{- $desc = "Sorry, we couldn’t find that page. Browse Local Pest Co’s pest control services across Kingscliff and the Tweed Coast." -}}
+  {{- end -}}
+  {{- if not $desc }}{{ warnf "Missing meta description for %s" .RelPermalink }}{{ end -}}
+
+  {{- if .IsNode }}
+    {{- with .Paginator }}
+      {{- if gt .PageNumber 1 -}}
+        {{- $title = printf "%s - Page %d" $title .PageNumber -}}
+        {{- if $desc }}{{ $desc = printf "%s (Page %d)" ($desc | plainify) .PageNumber }}{{ end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+<title>{{ $title }}</title>
 {{- if $desc }}<meta name="description" content="{{ $desc | plainify | htmlEscape }}">{{ end -}}
 
-{{- $robots := "index,follow" -}}
-{{- if .Params.noindex }}{{ $robots = "noindex,follow" }}{{ end -}}
-{{- with .Params.robots }}{{ $robots = . }}{{ end -}}
-<meta name="robots" content="{{ $robots }}">
+  {{- $robots := "index,follow" -}}
+  {{- if .Params.noindex }}{{ $robots = "noindex,follow" }}{{ end -}}
+  {{- with .Params.robots }}{{ $robots = . }}{{ end -}}
+  {{- if eq .RelPermalink "/404.html" }}{{ $robots = "noindex,follow" }}{{ end -}}
+  <meta name="robots" content="{{ $robots }}">
 
 {{- $canon := .Permalink -}}
 {{- with .Params.canonical }}{{ $canon = . | absURL }}{{ end -}}
+{{- with $seo }}
+  {{- with .canonical }}{{ $canon = . | absURL }}{{ end -}}
+{{- end -}}
 {{- if ne $env "production" }}{{ $canon = replace $canon .Site.BaseURL $prod }}{{ end -}}
 <link rel="canonical" href="{{ $canon }}">
+
+  {{- if .IsNode }}
+    {{- with .Paginator }}
+      {{- if .HasPrev }}
+        {{- $prev := .Prev.URL | absURL -}}
+        {{- if ne $env "production" }}{{ $prev = replace $prev $.Site.BaseURL $prod }}{{ end -}}
+        <link rel="prev" href="{{ $prev }}">
+      {{- end -}}
+      {{- if .HasNext }}
+        {{- $next := .Next.URL | absURL -}}
+        {{- if ne $env "production" }}{{ $next = replace $next $.Site.BaseURL $prod }}{{ end -}}
+        <link rel="next" href="{{ $next }}">
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
 
 {{- if .IsPage }}<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">{{ end -}}
 
@@ -31,12 +76,21 @@
 <link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ $.Site.Title }}"/>
 {{- end -}}
 
-<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+{{- $ogType := "website" -}}
+{{- if and .IsPage (eq .Section "blog") }}{{ $ogType = "article" }}{{ end -}}
+<meta property="og:type" content="{{ $ogType }}">
 <meta property="og:title" content="{{ $title }}">
-{{- if $desc }}<meta property="og:description" content="{{ $desc }}">{{ end }}
+{{- if $desc }}<meta property="og:description" content="{{ $desc | htmlEscape }}">{{ end }}
 <meta property="og:url" content="{{ $canon }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
-{{- $img := .Params.social_image | default (index .Params.images 0) -}}
+{{- $img := "" -}}
+{{- with .Params.social_image }}{{ $img = . }}{{ end -}}
+{{- if not $img }}
+  {{- with .Params.images }}
+    {{- if gt (len .) 0 }}{{ $img = index . 0 }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $img }}{{ $img = .Site.Params.logo }}{{ end -}}
 {{- with $img }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
 
 {{- $card := "summary" -}}
@@ -44,7 +98,7 @@
 <meta name="twitter:card" content="{{ $card }}">
 {{- with .Site.Params.social.twitter }}<meta name="twitter:site" content="{{ . }}">{{ end }}
 <meta name="twitter:title" content="{{ $title }}">
-{{- if $desc }}<meta name="twitter:description" content="{{ $desc }}">{{ end }}
+{{- if $desc }}<meta name="twitter:description" content="{{ $desc | htmlEscape }}">{{ end }}
 {{- with $img }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}
 
 {{- if .IsTranslated -}}

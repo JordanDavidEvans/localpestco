@@ -1,6 +1,18 @@
 {{ define "main" }}
+{{- $h1 := partial "seo/page-h1.html" . -}}
+{{- $subhead := partial "seo/page-subhead.html" . -}}
+<section class="page-header">
+  <header>
+    <h1>{{ $h1 | htmlEscape }}</h1>
+    {{- if $subhead }}<p class="subhead">{{ $subhead | htmlEscape }}</p>{{ end -}}
+  </header>
+  {{- with .Content }}
+  <div class="page-intro">{{ . }}</div>
+  {{- end }}
+</section>
+{{- $paginator := .Paginate (.Pages.ByDate.Reverse) -}}
 <section class="blog-list">
-  {{ range .Pages.ByDate.Reverse }}
+  {{ range $paginator.Pages }}
   <article class="post-preview">
     <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
     <p class="post-meta">{{ .Date.Format "2006-01-02" }}</p>
@@ -8,4 +20,16 @@
   </article>
   {{ end }}
 </section>
+{{ with $paginator }}
+  {{ if gt .TotalPages 1 }}
+  <nav class="pagination" aria-label="Blog pagination">
+    <ul>
+      {{ if .HasPrev }}<li><a href="{{ .Prev.URL }}" rel="prev">Newer Posts</a></li>{{ end }}
+      <li>Page {{ .PageNumber }} of {{ .TotalPages }}</li>
+      {{ if .HasNext }}<li><a href="{{ .Next.URL }}" rel="next">Older Posts</a></li>{{ end }}
+    </ul>
+  </nav>
+  {{ end }}
+{{ end }}
+{{ partial "faq.html" . }}
 {{ end }}

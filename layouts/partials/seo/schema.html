@@ -1,44 +1,146 @@
 {{- $env := getenv "HUGO_ENV" | default "production" -}}
 {{- $base := .Site.Params.productionBaseURL | default .Site.BaseURL -}}
-{{- $schemas := slice -}}
-
-{{- $org := dict "@type" "Organization" "name" .Site.Title "url" $base -}}
-{{- with .Site.Params.logo }}{{ $org = merge $org (dict "logo" (absURL .)) }}{{ end -}}
-{{- $schemas = $schemas | append $org -}}
-
-{{- $website := dict "@type" "WebSite" "name" .Site.Title "url" $base -}}
-{{- with .Site.Params.search.url -}}
-  {{- $website = merge $website (dict "potentialAction" (dict "@type" "SearchAction" "target" (printf "%s?q={search_term_string}" .) "query-input" "required name=search_term_string")) -}}
+{{- $graph := slice -}}
+{{- $logo := "" -}}
+{{- with .Site.Params.logo }}
+  {{- $logo = absURL . -}}
+  {{- if ne $env "production" }}{{ $logo = replace $logo $.Site.BaseURL $base }}{{ end -}}
 {{- end -}}
-{{- $schemas = $schemas | append $website -}}
 
-{{- /* Breadcrumbs */ -}}
-{{- $crumbs := slice -}}
-{{- $pos := 1 -}}
-{{- $section := .CurrentSection -}}
-{{- if $section -}}
-  {{- range (append ($section.Ancestors.Reverse) (slice $section)) -}}
-    {{- $crumbs = $crumbs | append (dict "@type" "ListItem" "position" $pos "name" .Title "item" (replace .Permalink .Site.BaseURL $base)) -}}
+{{- $business := .Site.Params.business -}}
+{{- $businessID := "" -}}
+{{- if $business -}}
+  {{- $businessID = printf "%s#localpestco" $base -}}
+  {{- $localBusiness := dict "@type" "LocalBusiness" "@id" $businessID "name" ($business.name | default .Site.Title) "url" $base -}}
+  {{- with $business.legalName }}{{ $localBusiness = merge $localBusiness (dict "legalName" .) }}{{ end -}}
+  {{- with $business.phone }}{{ $localBusiness = merge $localBusiness (dict "telephone" .) }}{{ end -}}
+  {{- with $business.email }}{{ $localBusiness = merge $localBusiness (dict "email" .) }}{{ end -}}
+  {{- with $business.priceRange }}{{ $localBusiness = merge $localBusiness (dict "priceRange" .) }}{{ end -}}
+  {{- if $logo }}{{ $localBusiness = merge $localBusiness (dict "image" $logo) }}{{ end -}}
+  {{- with $business.sameAs }}{{ if gt (len .) 0 }}{{ $localBusiness = merge $localBusiness (dict "sameAs" .) }}{{ end }}{{ end -}}
+  {{- with $business.areaServed }}
+    {{- if gt (len .) 0 }}
+      {{- $areas := slice -}}
+      {{- range . }}{{ $areas = $areas | append (dict "@type" "AdministrativeArea" "name" .) }}{{ end -}}
+      {{- $localBusiness = merge $localBusiness (dict "areaServed" $areas) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- with $business.openingHours }}{{ if gt (len .) 0 }}{{ $localBusiness = merge $localBusiness (dict "openingHours" .) }}{{ end }}{{ end -}}
+  {{- with $business.address -}}
+    {{- $address := dict "@type" "PostalAddress" -}}
+    {{- with .streetAddress }}{{ $address = merge $address (dict "streetAddress" .) }}{{ end -}}
+    {{- with .addressLocality }}{{ $address = merge $address (dict "addressLocality" .) }}{{ end -}}
+    {{- with .addressRegion }}{{ $address = merge $address (dict "addressRegion" .) }}{{ end -}}
+    {{- with .postalCode }}{{ $address = merge $address (dict "postalCode" .) }}{{ end -}}
+    {{- with .addressCountry }}{{ $address = merge $address (dict "addressCountry" .) }}{{ end -}}
+    {{- $localBusiness = merge $localBusiness (dict "address" $address) -}}
+  {{- end -}}
+  {{- with $business.geo -}}
+    {{- if and .latitude .longitude -}}
+      {{- $geo := dict "@type" "GeoCoordinates" "latitude" .latitude "longitude" .longitude -}}
+      {{- $localBusiness = merge $localBusiness (dict "geo" $geo) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $graph = $graph | append $localBusiness -}}
+{{- end -}}
+
+{{- $websiteID := printf "%s#website" $base -}}
+{{- $website := dict "@type" "WebSite" "@id" $websiteID "name" .Site.Title "url" $base -}}
+{{- if and $businessID (ne $businessID "") }}
+  {{- $website = merge $website (dict "publisher" (dict "@id" $businessID)) -}}
+{{- end -}}
+{{- $graph = $graph | append $website -}}
+
+{{- $pageURL := replace .Permalink .Site.BaseURL $base -}}
+{{- $breadcrumbs := slice (dict "@type" "ListItem" "position" 1 "name" "Home" "item" $base) -}}
+{{- $pos := 2 -}}
+{{- if and .Section (not .IsSection) -}}
+  {{- with site.GetPage (printf "/%s" .Section) -}}
+    {{- $breadcrumbs = $breadcrumbs | append (dict "@type" "ListItem" "position" $pos "name" (partial "seo/page-h1.html" .) "item" (replace .Permalink .Site.BaseURL $base)) -}}
     {{- $pos = add $pos 1 -}}
   {{- end -}}
 {{- end -}}
-{{- if .IsPage -}}
-  {{- $crumbs = $crumbs | append (dict "@type" "ListItem" "position" $pos "name" .Title "item" (replace .Permalink .Site.BaseURL $base)) -}}
+{{- $breadcrumbs = $breadcrumbs | append (dict "@type" "ListItem" "position" $pos "name" (partial "seo/page-h1.html" .) "item" $pageURL) -}}
+{{- $graph = $graph | append (dict "@type" "BreadcrumbList" "@id" (printf "%s#breadcrumbs" $pageURL) "itemListElement" $breadcrumbs) -}}
+
+{{- $seo := .Params.seo -}}
+{{- $pageDesc := "" -}}
+{{- with $seo }}
+  {{- with .description }}{{ $pageDesc = . }}{{ end -}}
 {{- end -}}
-{{- if gt (len $crumbs) 0 -}}
-  {{- $schemas = $schemas | append (dict "@type" "BreadcrumbList" "itemListElement" $crumbs) -}}
+{{- if not $pageDesc }}
+  {{- $pageDesc = .Params.meta_desc | default .Params.description | default (.Summary | plainify) -}}
+{{- end -}}
+{{- if $pageDesc }}{{ $pageDesc = $pageDesc | plainify }}{{ end -}}
+
+{{- $pageType := "WebPage" -}}
+{{- if .IsSection }}
+  {{- $pageType = "CollectionPage" -}}
+{{- else if and .IsPage (eq .Section "blog") -}}
+  {{- $pageType = "BlogPosting" -}}
+{{- end -}}
+{{- if and .IsPage (eq .File.BaseFileName "contact") }}{{ $pageType = "ContactPage" }}{{ end -}}
+
+{{- $pageID := printf "%s#webpage" $pageURL -}}
+{{- $pageName := partial "seo/page-h1.html" . -}}
+{{- $pageEntity := dict "@type" $pageType "@id" $pageID "url" $pageURL "isPartOf" (dict "@id" $websiteID) -}}
+{{- if eq $pageType "BlogPosting" -}}
+  {{- $pageEntity = merge $pageEntity (dict "headline" .Title "datePublished" (.PublishDate | time.Format "2006-01-02") "dateModified" (.Lastmod | time.Format "2006-01-02")) -}}
+  {{- $authorName := .Params.author | default .Site.Title -}}
+  {{- $pageEntity = merge $pageEntity (dict "author" (dict "@type" "Person" "name" $authorName)) -}}
+  {{- if $businessID }}{{ $pageEntity = merge $pageEntity (dict "publisher" (dict "@id" $businessID)) }}{{ end -}}
+  {{- if $pageDesc }}{{ $pageEntity = merge $pageEntity (dict "description" $pageDesc) }}{{ end -}}
+  {{- $hero := "" -}}
+  {{- with .Params.social_image }}{{ $hero = . }}{{ end -}}
+  {{- if not $hero }}
+    {{- with .Params.images }}{{ if gt (len .) 0 }}{{ $hero = index . 0 }}{{ end }}{{ end -}}
+  {{- end -}}
+  {{- if $hero }}
+    {{- $heroAbs := absURL $hero -}}
+    {{- if ne $env "production" }}{{ $heroAbs = replace $heroAbs $.Site.BaseURL $base }}{{ end -}}
+    {{- $pageEntity = merge $pageEntity (dict "image" (slice $heroAbs)) }}
+  {{- end -}}
+{{- else -}}
+  {{- if $pageName }}{{ $pageEntity = merge $pageEntity (dict "name" $pageName) }}{{ end -}}
+  {{- if $pageDesc }}{{ $pageEntity = merge $pageEntity (dict "description" $pageDesc) }}{{ end -}}
 {{- end -}}
 
-{{- if .IsPage -}}
-  {{- $ptype := "WebPage" -}}
-  {{- if in (slice "posts" "blog") .Section }}{{ $ptype = "Article" }}{{ end -}}
-  {{- $page := dict "@type" $ptype "headline" .Title "url" (replace .Permalink .Site.BaseURL $base) "datePublished" (.PublishDate | time.Format "2006-01-02") "dateModified" (.Lastmod | time.Format "2006-01-02") -}}
-  {{- with .Params.author }}{{ $page = merge $page (dict "author" (dict "@type" "Person" "name" .)) }}{{ end -}}
-  {{- with (or .Params.images (slice)) }}{{ $page = merge $page (dict "image" (apply (first 1 .) "absURL" ".")) }}{{ end -}}
-  {{- with .Params.schema }}{{ $page = merge $page . }}{{ end -}}
-  {{- $schemas = $schemas | append $page -}}
+{{- $faqEntity := dict -}}
+{{- if .Params.faq }}
+  {{- $faqItems := slice -}}
+  {{- range .Params.faq }}
+    {{- $answer := dict "@type" "Answer" "text" (.answer | plainify) -}}
+    {{- $faqItems = $faqItems | append (dict "@type" "Question" "name" (.question | plainify) "acceptedAnswer" $answer) -}}
+  {{- end -}}
+  {{- if gt (len $faqItems) 0 -}}
+    {{- $faqID := printf "%s#faq" $pageURL -}}
+    {{- $faqEntity = dict "@type" "FAQPage" "@id" $faqID "mainEntity" $faqItems -}}
+    {{- $pageEntity = merge $pageEntity (dict "mainEntity" (dict "@id" $faqID)) -}}
+    {{- $graph = $graph | append $faqEntity -}}
+  {{- end -}}
 {{- end -}}
 
-<script type="application/ld+json">
-{{ $schemas | jsonify | safeJS }}
-</script>
+{{- with .Params.service }}
+  {{- $service := dict "@type" "Service" "name" (.name | default $pageName) "url" $pageURL -}}
+  {{- if and $businessID (ne $businessID "") }}{{ $service = merge $service (dict "provider" (dict "@id" $businessID)) }}{{ end -}}
+    {{- with .serviceType }}{{ $service = merge $service (dict "serviceType" .) }}{{ end -}}
+    {{- with .description }}
+      {{- $service = merge $service (dict "description" (. | plainify)) -}}
+    {{- else }}
+      {{- if $pageDesc }}{{ $service = merge $service (dict "description" $pageDesc) }}{{ end -}}
+    {{- end -}}
+  {{- with .areaServed }}
+    {{- if gt (len .) 0 }}
+      {{- $areas := slice -}}
+      {{- range . }}{{ $areas = $areas | append (dict "@type" "AdministrativeArea" "name" .) }}{{ end -}}
+      {{- $service = merge $service (dict "areaServed" $areas) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- with .offers }}{{ $service = merge $service (dict "offers" .) }}{{ end -}}
+  {{- $graph = $graph | append $service -}}
+{{- end -}}
+
+{{- $graph = $graph | append $pageEntity -}}
+
+  {{- $schema := dict "@context" "https://schema.org" "@graph" $graph -}}
+  <script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>

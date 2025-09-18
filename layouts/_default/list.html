@@ -1,8 +1,20 @@
 {{ define "main" }}
+{{- $h1 := partial "seo/page-h1.html" . -}}
+{{- $subhead := partial "seo/page-subhead.html" . -}}
+<section class="page-header">
+  <header>
+    <h1>{{ $h1 | htmlEscape }}</h1>
+    {{- if $subhead }}
+      <p class="subhead">{{ $subhead | htmlEscape }}</p>
+    {{- end }}
+  </header>
+  {{- with .Content }}
+  <div class="page-intro">{{ . }}</div>
+  {{- end }}
+</section>
 <section class="page-list">
   {{ range .Pages }}
   <article class="content-row">
-    {{- $location := cond (eq .Section "locations") .Title "Kingscliff" -}}
     <div class="text">
       <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
       {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
@@ -10,4 +22,5 @@
   </article>
   {{ end }}
 </section>
+{{ partial "faq.html" . }}
 {{ end }}

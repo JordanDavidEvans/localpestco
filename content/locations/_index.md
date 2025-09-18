@@ -1,6 +1,10 @@
 +++
-title = "Locations Around Kingscliff"
+title = "Pest Control Locations Around Kingscliff"
 description = "Pest control services in Kingscliff and nearby areas."
+meta_desc = "Pest control services in Kingscliff and nearby Tweed Coast suburbs, including Casuarina, Cabarita Beach, Pottsville, and more."
+[seo]
+subhead = "Find pest control support for Kingscliff, Casuarina, Cabarita Beach, Pottsville, and the wider Tweed Coast."
++++
 
 [[faq]]
 question = "Do you service areas outside these locations?"

@@ -1,0 +1,14 @@
+{{- if not .IsHome -}}
+  {{- $currentTitle := partial "seo/page-h1.html" . -}}
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="{{ "/" | relURL }}">Home</a></li>
+      {{- if and .Section (not .IsSection) }}
+        {{- with site.GetPage (printf "/%s" .Section) }}
+          <li><a href="{{ .RelPermalink }}">{{ partial "seo/page-h1.html" . | htmlEscape }}</a></li>
+        {{- end }}
+      {{- end }}
+      <li aria-current="page">{{ $currentTitle | htmlEscape }}</li>
+    </ol>
+  </nav>
+{{- end -}}

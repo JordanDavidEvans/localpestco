@@ -1,8 +1,21 @@
 +++
-title = "Timber Pest Control"
-description = "Licensed timber pest inspections and treatments protecting Tweed Coast homes and businesses."
+title = "Timber Pest Control Kingscliff | Local Pest Co"
+description = "Licensed timber pest inspections and treatments protecting Kingscliff homes and businesses across the Tweed Coast from termites, borers, and decay."
+meta_desc = "Licensed timber pest inspections and treatments protecting Kingscliff homes and businesses across the Tweed Coast from termites, borers, and decay."
 keywords = ["timber pest control", "licensed pest inspector", "timber pest treatment", "wood pest inspection"]
+[seo]
+h1 = "Timber Pest Control in Kingscliff"
+subhead = "Licensed inspections and treatments safeguarding Tweed Coast properties from termites and borers."
+description = "Licensed timber pest inspections and treatments protecting Kingscliff homes and businesses across the Tweed Coast from termites, borers, and decay."
+[service]
+name = "Timber Pest Control"
+serviceType = "Timber pest control"
+areaServed = ["Kingscliff NSW", "Tweed Coast NSW"]
 +++
+
+{{< seo_h1 >}}
+
+Protect the structure of your home or business with thorough timber pest inspections that identify termites, borers, and fungal decay before they spread.
 
 ## What Is Timber Pest Control?
 
