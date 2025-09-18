@@ -1,7 +1,16 @@
 +++
-title = "Guide to Eco-Friendly Pest Control"
-description = "Practical, environmentally safe pest control tips for Tweed Coast homes."
+title = "Eco-Friendly Pest Control Kingscliff | Local Pest Co"
+description = "Environmentally conscious pest control for Kingscliff and Tweed Coast properties using low-tox products, cultural land care, and prevention strategies."
+meta_desc = "Environmentally conscious pest control for Kingscliff and Tweed Coast properties using low-tox products, cultural land care, and prevention strategies."
 keywords = ["guide to eco friendly pest control", "eco-friendly pest control methods", "eco safe pest control", "eco friendly pest solutions"]
+[seo]
+h1 = "Eco-Friendly Pest Control in Kingscliff"
+subhead = "Low-tox pest solutions that protect local wildlife, families, and the Tweed Coast environment."
+description = "Environmentally conscious pest control for Kingscliff and Tweed Coast properties using low-tox products, cultural land care, and prevention strategies."
+[service]
+name = "Eco-Friendly Pest Control"
+serviceType = "Eco-friendly pest control"
+areaServed = ["Kingscliff NSW", "Tweed Coast NSW"]
 
 [[faq]]
 question = "Are eco-friendly pest control methods effective?"
@@ -11,6 +20,10 @@ answer = "Yes, modern green treatments target pests while minimising impact on p
 question = "Will eco treatments harm my pets?"
 answer = "The products I use are chosen to be safe for families and pets when applied correctly."
 +++
+
+{{< seo_h1 >}}
+
+Eco-friendly pest control keeps your property comfortable while respecting the Tweed Coast environment and the wildlife that shares our community.
 
 ## Why Eco-Friendly Pest Control Matters
 

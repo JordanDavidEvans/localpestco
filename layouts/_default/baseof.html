@@ -90,6 +90,7 @@
     {{ partial "banner.html" . }}
   {{ partial "cta.html" . }}
   <main id="main-content">
+    {{ partial "breadcrumbs.html" . }}
     {{ block "main" . }}{{ end }}
   </main>
   {{ partial "contact-form.html" . }}

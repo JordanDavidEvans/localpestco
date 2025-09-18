@@ -1,10 +1,5 @@
-{{- $seo := .Page.Params.seo -}}
-{{- $h1 := .Page.Title -}}
-{{- $subhead := "" -}}
-{{- with $seo }}
-  {{- with .h1 }}{{ $h1 = . }}{{ end -}}
-  {{- with .subhead }}{{ $subhead = . }}{{ end -}}
-{{- end -}}
+{{- $h1 := partial "seo/page-h1.html" .Page -}}
+{{- $subhead := partial "seo/page-subhead.html" .Page -}}
 {{- if $h1 }}
 <h1>{{ $h1 | htmlEscape }}</h1>
 {{- end }}

@@ -1,7 +1,12 @@
 +++
-title = "About"
+title = "About Local Pest Co | Kingscliff Pest Control"
 description = "Learn about Local Pest Co and its owner Shannon Kitchener, a Kingscliff-based Aboriginal fly fisher and pest control expert serving the Tweed Coast."
+meta_desc = "Learn about Local Pest Co and its owner Shannon Kitchener, a Kingscliff-based Aboriginal fly fisher and pest control expert serving the Tweed Coast."
 keywords = ["about Local Pest Co", "Kingscliff pest experts", "Tweed Coast local pest control", "Shannon Kitchener"]
+[seo]
+h1 = "About Local Pest Co"
+subhead = "Meet Shannon Kitchener, the licensed Aboriginal pest technician caring for Kingscliff and the Tweed Coast."
+description = "Learn about Local Pest Co and its owner Shannon Kitchener, a Kingscliff-based Aboriginal fly fisher and pest control expert serving the Tweed Coast."
 
 [[faq]]
 question = "Are you licensed for pest control?"
@@ -12,7 +17,11 @@ question = "Do you guarantee your work?"
 answer = "All treatments include practical follow-up advice and a service guarantee."
 +++
 
-## About Local Pest Co
+{{< seo_h1 >}}
+
+Local Pest Co is a Wiradjuri and Bundjalung owned business delivering licensed pest management with respect for Country and community.
+
+## Our Story
 
 Founded and operated by me, an *Aboriginal* local, **Local Pest Co** combines my community knowledge with licensed pest management techniques for Kingscliff and surrounding suburbs. I focus on safe methods that respect families, pets, and the environment while keeping Tweed Coast homes pest-free.
 

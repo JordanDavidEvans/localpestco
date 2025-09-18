@@ -34,3 +34,21 @@ section = ['HTML', 'RSS']
   [params.social]
     facebook = 'https://www.facebook.com/Localpestco/'
     twitter = ''
+  [params.business]
+    name = 'Local Pest Co'
+    legalName = 'Local Pest Co'
+    phone = '+61-405-508-035'
+    email = 'thelocalpestco@bigpond.com'
+    priceRange = '$$'
+    areaServed = ['Kingscliff NSW', 'Tweed Coast NSW', 'Northern Rivers NSW']
+    openingHours = ['Mo-Su 08:00-18:00']
+    sameAs = ['https://www.facebook.com/Localpestco/', 'https://www.facebook.com/xstreamfly/', 'https://www.instagram.com/xstream_fly/']
+    [params.business.address]
+      streetAddress = '23 Dinsey Street'
+      addressLocality = 'Kingscliff'
+      addressRegion = 'NSW'
+      postalCode = '2487'
+      addressCountry = 'AU'
+    [params.business.geo]
+      latitude = -28.2638497
+      longitude = 153.57372

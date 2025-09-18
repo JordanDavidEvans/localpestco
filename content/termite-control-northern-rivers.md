@@ -1,7 +1,16 @@
 +++
-title = "Northern Rivers Termite Control Specialists"
-description = "Targeted termite inspections and treatments for homes across the Northern Rivers region."
+title = "Termite Control Northern Rivers | Local Pest Co"
+description = "Licensed termite inspections and treatments for Northern Rivers homes with early detection, targeted baiting, and monitoring across Kingscliff."
+meta_desc = "Licensed termite inspections and treatments for Northern Rivers homes with early detection, targeted baiting, and monitoring across Kingscliff."
 keywords = ["Northern Rivers termite control", "termite inspections NSW", "licensed termite treatment"]
+[seo]
+h1 = "Termite Control in the Northern Rivers"
+subhead = "Licensed inspections, baiting, and monitoring plans for Kingscliff and Tweed Coast properties."
+description = "Licensed termite inspections and treatments for Northern Rivers homes with early detection, targeted baiting, and monitoring across Kingscliff."
+[service]
+name = "Termite Control"
+serviceType = "Termite control"
+areaServed = ["Northern Rivers NSW", "Kingscliff NSW", "Tweed Coast NSW"]
 
 [[faq]]
 question = "How often should I get a termite inspection?"
@@ -11,6 +20,10 @@ answer = "An annual inspection is recommended, especially in high-risk areas lik
 question = "What are common signs of termites?"
 answer = "Look for mud tubes, hollow-sounding timber and discarded wings around windows."
 +++
+
+{{< seo_h1 >}}
+
+Termites move quickly through the warm, coastal climate of the Northern Rivers, so I focus on early detection, baiting, and follow-up monitoring to protect timber homes from costly damage.
 
 ## Local Termite Expertise
 

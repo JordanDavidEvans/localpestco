@@ -1,7 +1,16 @@
 +++
-title = "My Services"
-description = "Comprehensive pest control services for Kingscliff and Tweed Coast homes and businesses."
+title = "Pest Control Services Kingscliff | Local Pest Co"
+description = "Comprehensive pest control for Kingscliff and Tweed Coast homes and businesses, covering residential, commercial, termite, and eco-friendly treatments."
+meta_desc = "Comprehensive pest control for Kingscliff and Tweed Coast homes and businesses, covering residential, commercial, termite, and eco-friendly treatments."
 keywords = ["Kingscliff termite treatment", "Tweed Coast rodent control", "ant and cockroach solutions"]
+[seo]
+h1 = "Pest Control Services in Kingscliff"
+subhead = "Residential, commercial, termite, and eco-friendly treatments for Tweed Coast properties."
+description = "Comprehensive pest control for Kingscliff and Tweed Coast homes and businesses, covering residential, commercial, termite, and eco-friendly treatments."
+[service]
+name = "Pest Control Services"
+serviceType = "Pest control"
+areaServed = ["Kingscliff NSW", "Tweed Coast NSW"]
 
 [[faq]]
 question = "What pest control methods do you use?"
@@ -11,6 +20,10 @@ answer = "I use targeted, low-toxicity treatments tailored to each pest problem.
 question = "Do you provide same-day service?"
 answer = "Yes, I strive to offer same-day or next-day visits across the Tweed Coast."
 +++
+
+{{< seo_h1 >}}
+
+From Kingscliff to the wider Tweed Coast, I deliver integrated pest control programs that protect homes, rentals, and workplaces while keeping families, pets, and pollinators safe.
 
 ## Comprehensive Pest Solutions
 

@@ -1,7 +1,12 @@
 +++
-title = "Snakes Around Kingscliff"
-description = "Local snake info for Kingscliff and who to call for safe removal."
+title = "Snake Catchers Kingscliff | Local Pest Co"
+description = "Snake safety tips for Kingscliff with local catcher contacts, species info, and guidance on when to call a licensed handler."
+meta_desc = "Snake safety tips for Kingscliff with local catcher contacts, species info, and guidance on when to call a licensed handler."
 keywords = ["snakes kingscliff", "kingscliff snake information", "northern rivers snake catcher"]
+[seo]
+h1 = "Snake Catcher Contacts for Kingscliff"
+subhead = "Learn how to respond to snake sightings and who to call for safe removal across the Tweed Coast."
+description = "Snake safety tips for Kingscliff with local catcher contacts, species info, and guidance on when to call a licensed handler."
 
 [[faq]]
 question = "Do you remove snakes?"
@@ -15,6 +20,10 @@ answer = "Keep kids and pets away, watch from a distance and call a licensed cat
 question = "Are snakes around Kingscliff dangerous?"
 answer = "Most are shy like carpet pythons, but red-bellied blacks and browns do show up, so give them space."
 +++
+
+{{< seo_h1 >}}
+
+Snakes occasionally pass through Kingscliff yards, so knowing who to call and how to stay calm keeps families, pets, and wildlife safe.
 
 ## Snakes in the Neighbourhood
 
