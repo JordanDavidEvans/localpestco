@@ -1,6 +1,6 @@
 +++
 title = "Pest Control Eltham | Local Pest Co"
-description = "Licensed, eco-conscious pest control in Eltham for homes and businesses. Same or next-day service across Lismore Region."
+description = "Licensed, eco-conscious pest control in Eltham for homes and businesses. Visits are scheduled around regular service runs across Lismore Region."
 keywords = [
   "Eltham pest control",
   "Lismore Region termite treatment",
@@ -18,7 +18,7 @@ answer = "Yes. I use targeted, low-tox options and explain what each product doe
 
 [[faq]]
 question = "How soon can you visit my place?"
-answer = "Most jobs happen the same or next day. I’ll confirm timing when you call or email. If weather slows things down, I’ll keep you updated."
+answer = "Bookings are slotted into my existing run so I can cover the region efficiently. I’ll confirm the first available time when you call or email and keep you updated if weather or other jobs shift the plan."
 
 [[faq]]
 question = "Do you handle termites?"
@@ -34,7 +34,7 @@ answer = "Tidy access to affected rooms and move pets to a safe area. Let me kno
 +++
 {{< seo_h1 >}}
 
-Licensed NSW EPA pest management technician (Lic. 5073077) delivering targeted, low-tox treatments for homes and businesses in Eltham. Same or next-day support across Lismore Region.
+Licensed NSW EPA pest management technician (Lic. 5073077) delivering targeted, low-tox treatments for homes and businesses in Eltham. Support is booked around regular service runs across Lismore Region.
 
 [Call 0405 508 035](tel:0405508035) — Book with Shannon.  
 [Email for a quote](mailto:thelocalpestco@bigpond.com) — Reply within one business day.

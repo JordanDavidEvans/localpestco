@@ -12,7 +12,7 @@ answer = "Yes, contact me to see if I can travel to your community."
 
 [[faq]]
 question = "How soon can you visit my area?"
-answer = "I aim to provide same or next-day service where possible."
+answer = "I schedule work around existing runs and will let you know the first available time when you get in touch."
 +++
 
 I provide eco-friendly pest control across the Tweed Coast. Choose your area below.
