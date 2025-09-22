@@ -1,6 +1,13 @@
 {{ define "main" }}
 <article>
   {{ .Content }}
+  {{ if or (eq .Section "locations") (.Params.service) }}
+  <section class="booking-note">
+    <h2>Booking &amp; Service Frequency</h2>
+    <p>Work is booked into existing service runs so I can cover each area efficiently, which means it isn&rsquo;t always possible to attend the very next day. I&rsquo;ll confirm the first available appointment and keep you posted if weather or other jobs shift the schedule.</p>
+    <p>One-off treatments are possible when the timetable allows, yet most clients save money with planned follow-up visits that stop pests from re-establishing and reduce the need for heavier treatments later.</p>
+  </section>
+  {{ end }}
 </article>
 {{ partial "faq.html" . }}
 {{ with site.RegularPages.Related . }}

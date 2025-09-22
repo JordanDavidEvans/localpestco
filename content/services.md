@@ -18,7 +18,7 @@ answer = "I use targeted, low-toxicity treatments tailored to each pest problem.
 
 [[faq]]
 question = "Do you provide same-day service?"
-answer = "Yes, I strive to offer same-day or next-day visits across the Tweed Coast."
+answer = "I book jobs into planned runs across the Tweed Coast and will confirm the first available slot when you call or email."
 +++
 
 {{< seo_h1 >}}
